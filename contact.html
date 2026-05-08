@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Victory Primary School – Ngcobo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ── NAVIGATION ─────────────────────────── -->
+    <nav>
+      <div class="nav-inner">
+        <a href="index.html" class="nav-brand">
+          <img
+            src="_images/Logo - Copy.png"
+            alt="Victory Primary School"
+            class="nav-logo"
+          />
+          <div class="nav-name">
+            <span class="school">Victory Primary School</span>
+            <span class="tagline">In God We Trust</span>
+          </div>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="admissions.html" class="nav-cta">Admissions</a></li>
+        </ul>
+        <div class="nav-hamburger" id="hamburger" onclick="toggleNav()">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ── PAGE HERO ──────────────────────────── -->
+    <div class="page-hero">
+      <div class="container page-hero-content">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a><sep>/</sep><span>Contact</span>
+        </div>
+        <h1>Get in Touch</h1>
+        <p>
+          We'd love to hear from you. Reach out to our friendly team — we're
+          here to help.
+        </p>
+      </div>
+    </div>
+
+    <!-- ── CONTACT SECTION ───────────────────── -->
+    <section>
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Contact Details -->
+          <div>
+            <h2 style="color: var(--dark); margin-bottom: 0.4rem">
+              Contact Information
+            </h2>
+            <div class="section-divider" style="margin: 0.6rem 0 1.5rem"></div>
+            <p>
+              We welcome all enquiries from parents, prospective families, and
+              community members. Our office is open during school hours.
+            </p>
+
+            <div class="contact-info">
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <h4>Physical Address</h4>
+                  <p>
+                    Victory Primary School<br />Ngcobo, Eastern Cape<br />South
+                    Africa
+                  </p>
+                </div>
+              </div>
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <h4>Telephone</h4>
+                  <p>
+                    <a
+                      href="tel:+27727884207"
+                      style="color: var(--red); font-weight: 700"
+                      >072 788 4207</a
+                    >
+                  </p>
+                  <p style="font-size: 0.82rem; margin: 0">
+                    Monday – Friday · 07:00 – 15:30
+                  </p>
+                </div>
+              </div>
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <h4>Email Address</h4>
+                  <p>
+                    <a
+                      href="mailto:victoryprimaryec@gmail.com"
+                      style="color: var(--red); font-weight: 700"
+                      >victoryprimaryec@gmail.com</a
+                    >
+                  </p>
+                  <p style="font-size: 0.82rem; margin: 0">
+                    We aim to respond within 1–2 school days.
+                  </p>
+                </div>
+              </div>
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div>
+                  <h4>Office Hours</h4>
+                  <p>
+                    Monday – Friday: 07:00 – 15:30<br />Saturday & Sunday:
+                    Closed<br />School holidays: Closed
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Google Maps -->
+            <div
+              style="
+                margin-top: 2rem;
+                border-radius: var(--radius);
+                overflow: hidden;
+                box-shadow: var(--shadow-md);
+              "
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3394.9668812474774!2d27.98523097522588!3d-31.68947330950546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e604df3d00057bd%3A0x1dbb9b3ca183819e!2sVictory%20Primary%20school!5e0!3m2!1sen!2sza!4v1778250384037!5m2!1sen!2sza"
+                width="100%"
+                height="300"
+                style="border: 0; display: block"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Contact Form — submissions delivered to victoryprimaryec@gmail.com via Formspree -->
+          <!-- SETUP: sign up free at formspree.io, create a form, then replace YOUR_FORM_ID below -->
+          <form
+            class="contact-form"
+            id="contactForm"
+            action="https://formspree.io/f/xgodneev"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="Website Enquiry — Victory Primary School"
+            />
+
+            <h3>Send Us a Message</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 1.5rem">
+              Fill in the form below and a member of our team will get back to
+              you as soon as possible.
+            </p>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input
+                  type="text"
+                  id="firstName"
+                  name="first-name"
+                  placeholder="Your first name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input
+                  type="text"
+                  id="lastName"
+                  name="last-name"
+                  placeholder="Your last name"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your@email.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+27 00 000 0000"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <select id="subject" name="subject" required>
+                <option value="" disabled selected>Select a subject…</option>
+                <option>Admissions Enquiry</option>
+                <option>General Information</option>
+                <option>School Fees</option>
+                <option>Academic Concern</option>
+                <option>Events &amp; Calendar</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Tell us how we can help you…"
+                required
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              id="submitBtn"
+              class="btn btn-primary"
+              style="width: 100%; justify-content: center"
+            >
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+
+            <p
+              id="formSuccess"
+              style="
+                display: none;
+                color: var(--red);
+                font-weight: 700;
+                text-align: center;
+                margin-top: 1rem;
+              "
+            >
+              <i class="fa-solid fa-circle-check"></i> Thank you! Your message
+              has been received. We'll be in touch soon.
+            </p>
+            <p
+              id="formError"
+              style="
+                display: none;
+                color: #c0392b;
+                text-align: center;
+                margin-top: 1rem;
+              "
+            >
+              <i class="fa-solid fa-triangle-exclamation"></i> Something went
+              wrong. Please try again or call us on
+              <a href="tel:+27727884207">072 788 4207</a>.
+            </p>
+
+            <p
+              style="
+                font-size: 0.78rem;
+                color: var(--grey-text);
+                text-align: center;
+                margin-top: 1rem;
+              "
+            >
+              ✝ "Ask and it will be given to you; seek and you will find." —
+              Matthew 7:7
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ ────────────────────────────────── -->
+    <section class="bg-grey">
+      <div class="container" style="max-width: 800px">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="section-divider"></div>
+
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 1rem;
+          "
+        >
+          <div
+            style="
+              background: var(--white);
+              border-radius: var(--radius);
+              padding: 1.4rem;
+              border: 1px solid var(--grey-mid);
+            "
+          >
+            <h4 style="color: var(--red); margin-bottom: 0.4rem">
+              What grades does Victory Primary offer?
+            </h4>
+            <p style="margin: 0; font-size: 0.92rem">
+              We offer Grade R through Grade 7, covering the full primary school
+              journey from the Foundation Phase right through to the Senior
+              Phase.
+            </p>
+          </div>
+          <div
+            style="
+              background: var(--white);
+              border-radius: var(--radius);
+              padding: 1.4rem;
+              border: 1px solid var(--grey-mid);
+            "
+          >
+            <h4 style="color: var(--red); margin-bottom: 0.4rem">
+              Is Victory Primary a fee-paying school?
+            </h4>
+            <p style="margin: 0; font-size: 0.92rem">
+              Yes, we have a school fee structure in place. However, we offer
+              payment arrangements and fee assistance for families who need
+              support. Please speak to the principal confidentially.
+            </p>
+          </div>
+          <div
+            style="
+              background: var(--white);
+              border-radius: var(--radius);
+              padding: 1.4rem;
+              border: 1px solid var(--grey-mid);
+            "
+          >
+            <h4 style="color: var(--red); margin-bottom: 0.4rem">
+              Do I need to be Christian to attend Victory Primary?
+            </h4>
+            <p style="margin: 0; font-size: 0.92rem">
+              While our school is founded on Christian values and faith is
+              central to our school life, we welcome all learners regardless of
+              background. We ask that families respect and support our
+              faith-based ethos.
+            </p>
+          </div>
+          <div
+            style="
+              background: var(--white);
+              border-radius: var(--radius);
+              padding: 1.4rem;
+              border: 1px solid var(--grey-mid);
+            "
+          >
+            <h4 style="color: var(--red); margin-bottom: 0.4rem">
+              When can I apply for the next school year?
+            </h4>
+            <p style="margin: 0; font-size: 0.92rem">
+              Applications for the following year typically open mid-year. We
+              recommend applying as early as possible as spaces are limited.
+              Contact us for current availability.
+            </p>
+          </div>
+          <div
+            style="
+              background: var(--white);
+              border-radius: var(--radius);
+              padding: 1.4rem;
+              border: 1px solid var(--grey-mid);
+            "
+          >
+            <h4 style="color: var(--red); margin-bottom: 0.4rem">
+              Where is the school located?
+            </h4>
+            <p style="margin: 0; font-size: 0.92rem">
+              Victory Primary School is located in Ngcobo, a small town in the
+              Eastern Cape province of South Africa. Contact us for the exact
+              street address and directions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FOOTER ─────────────────────────────── -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img
+              src="_images/Logo - Copy.png"
+              alt="Victory Primary School"
+              class="footer-logo"
+            />
+            <h3>Victory Primary School</h3>
+            <span class="motto">"In God We Trust"</span>
+            <p>
+              A Christian primary school in Ngcobo, Eastern Cape, nurturing
+              learners from Grade R to Grade 7 since 2017.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="academics.html">Academics</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>School</h4>
+            <ul>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="admissions.html">Admissions</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="#">Ngcobo, Eastern Cape</a></li>
+              <li>
+                <a href="mailto:victoryprimaryec@gmail.com"
+                  >victoryprimaryec@gmail.com</a
+                >
+              </li>
+              <li><a href="tel:+27727884207">072 788 4207</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span
+            >© 2025 Victory Primary School, Ngcobo. All rights reserved.</span
+          >
+          <span class="love">Established 2017 · In God We Trust ✝</span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleNav() {
+        document.getElementById("navLinks").classList.toggle("open");
+      }
+
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+          const btn = document.getElementById("submitBtn");
+          btn.innerHTML =
+            '<i class="fa-solid fa-spinner fa-spin"></i> Sending…';
+          btn.disabled = true;
+
+          try {
+            const response = await fetch(this.action, {
+              method: "POST",
+              body: new FormData(this),
+              headers: { Accept: "application/json" },
+            });
+            if (response.ok) {
+              document.getElementById("formSuccess").style.display = "block";
+              document.getElementById("formError").style.display = "none";
+              this.reset();
+              btn.innerHTML =
+                '<i class="fa-solid fa-paper-plane"></i> Send Message';
+              btn.disabled = false;
+            } else {
+              throw new Error();
+            }
+          } catch {
+            document.getElementById("formError").style.display = "block";
+            document.getElementById("formSuccess").style.display = "none";
+            btn.innerHTML =
+              '<i class="fa-solid fa-paper-plane"></i> Send Message';
+            btn.disabled = false;
+          }
+        });
+    </script>
+  </body>
+</html>
