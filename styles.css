@@ -245,7 +245,7 @@ nav {
 .mv-card.vision  { background: linear-gradient(135deg, var(--gold), var(--gold-dark)); color: var(--dark); }
 .mv-card .mv-icon { font-size: 2rem; margin-bottom: 0.9rem; }
 .mv-card h3 { font-size: 1.35rem; margin-bottom: 0.9rem; }
-.mv-card p  { opacity: .9; margin: 0; font-size: 1rem; }
+.mv-card p  { opacity: .9; margin: 0; font-size: 1rem; color: var(--white); }
 .team-grid  { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1.5rem; }
 .team-card  { background: var(--white); border-radius: var(--radius); padding: 2rem 1.5rem; text-align: center; box-shadow: var(--shadow-sm); border: 1px solid var(--grey-mid); transition: all var(--transition); }
 .team-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
