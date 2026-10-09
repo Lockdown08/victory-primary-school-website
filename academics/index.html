@@ -1,455 +1,312 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Academics</title>
-    <link rel="stylesheet" href="/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+    <title>Academics · Victory Primary School, Ngcobo</title>
+    <meta name="description" content="Victory Primary School follows the CAPS curriculum from Grade R to Grade 7. See the subjects taught in each phase and our activities outside the classroom." />
+    <meta name="theme-color" content="#3a1119" />
+    <link rel="preload" href="/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/public-sans-400.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/css/victory.css" />
     <link rel="icon" href="/favicon.ico" sizes="48x48" />
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
-    <!-- ── NAVIGATION ─────────────────────────── -->
-    <nav>
-      <div class="nav-inner">
-        <a href="/" class="nav-brand">
-          <img
-            src="/_images/logo (2).png"
-            alt="Victory Primary School"
-            class="nav-logo"
-          />
-          <div class="nav-name">
-            <span class="school">Victory Primary School</span>
-            <span class="tagline">In God We Trust</span>
-          </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="topbar">
+      <div class="wrap">
+        <div class="topbar__contact">
+          <a href="tel:+27699361866">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+            069 936 1866
+          </a>
+          <a href="mailto:victoryprimaryec@gmail.com" class="topbar__email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+            victoryprimaryec@gmail.com
+          </a>
+        </div>
+        <p class="topbar__motto">In God We Trust</p>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="wrap site-header__bar">
+        <a href="/" class="brand">
+          <img src="/_images/web/crest-192.webp" alt="" width="192" height="192" />
+          <span class="brand__name">
+            Victory
+            <span class="brand__sub">Primary School</span>
+          </span>
         </a>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/academics" class="active">Academics</a></li>
-          <li><a href="/gallery">Gallery</a></li>
-          <li><a href="/events">Events</a></li>
-          <li><a href="/contact">Contact</a></li>
-          <li><a href="/admissions" class="nav-cta">Admissions</a></li>
-        </ul>
-        <div class="nav-hamburger" id="hamburger" onclick="toggleNav()">
-          <span></span><span></span><span></span>
-        </div>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+          <span class="menu-toggle__icon" aria-hidden="true"></span>
+          <span class="menu-toggle__label">Menu</span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Main">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/academics" aria-current="page">Academics</a></li>
+            <li><a href="/events">Events</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/admissions" class="nav-apply">Admissions</a></li>
+          </ul>
+        </nav>
       </div>
-    </nav>
+    </header>
 
-    <!-- ── PAGE HERO ──────────────────────────── -->
-    <div class="page-hero">
-      <div class="container page-hero-content">
-        <div class="breadcrumb">
-          <a href="/">Home</a><sep>/</sep><span>Academics</span>
-        </div>
+    <main id="main">
+      <section class="page-hero" style="--focus: 50% 40%">
+        <picture class="page-hero__media">
+          <source type="image/webp" srcset="/_images/web/banner-academics-800.webp 800w, /_images/web/banner-academics-1280.webp 1280w" sizes="100vw" />
+          <img
+            src="/_images/web/banner-academics-800.jpg"
+            srcset="/_images/web/banner-academics-800.jpg 800w, /_images/web/banner-academics-1280.jpg 1280w"
+            sizes="100vw"
+            alt="Learners standing in a line outside their classroom, holding up their certificates"
+            fetchpriority="high"
+          />
+        </picture>
+        <div class="wrap page-hero__text">
+          <nav class="crumbs" aria-label="Breadcrumb">
+            <ol>
+              <li><a href="/">Home</a></li>
+              <li><span aria-current="page">Academics</span></li>
+            </ol>
+          </nav>
         <h1>Academics</h1>
-        <p>
-          A solid academic foundation built on faith, curiosity, and the joy of
-          discovery — from Grade R through Grade 7.
+        <p class="page-hero__lead">
+          A solid foundation built on faith, curiosity and the joy of
+          discovery, from Grade R through Grade 7.
         </p>
       </div>
-    </div>
+      </section>
 
-    <!-- ── CURRICULUM OVERVIEW ───────────────── -->
-    <section>
-      <div class="container">
-        <h2 class="section-title">Our Curriculum</h2>
-        <div class="section-divider"></div>
-        <p class="section-subtitle">
-          Victory Primary School follows the South African CAPS (Curriculum and
-          Assessment Policy Statement) curriculum, enriched with Christian
-          values and integrated learning.
-        </p>
-        <div class="academics-highlight">
-          <div class="highlight-card">
-            <div class="h-icon">
-              <i class="fa-solid fa-book-open-reader"></i>
-            </div>
-            <h3>CAPS Aligned</h3>
-            <p>
-              We fully follow the national CAPS curriculum, ensuring our
-              learners are well-prepared for high school and beyond.
+      <!-- Curriculum -->
+      <section class="section section--white">
+        <div class="wrap values-layout">
+          <div>
+            <p class="label">How we teach</p>
+            <h2>Our curriculum</h2>
+            <p class="intro">
+              Victory Primary School follows the South African CAPS
+              (Curriculum and Assessment Policy Statement) curriculum,
+              enriched with Christian values and integrated learning.
             </p>
           </div>
-          <div class="highlight-card">
-            <div class="h-icon"><i class="fa-solid fa-cross"></i></div>
-            <h3>Faith-Integrated</h3>
-            <p>
-              Christian values and biblical principles are woven naturally into
-              daily lessons, devotions, and school life.
-            </p>
-          </div>
-          <div class="highlight-card">
-            <div class="h-icon"><i class="fa-solid fa-child"></i></div>
-            <h3>Learner-Centred</h3>
-            <p>
-              We teach to every learner's unique strengths, giving each child
-              the attention and support they need to succeed.
-            </p>
-          </div>
-          <div class="highlight-card">
-            <div class="h-icon"><i class="fa-solid fa-earth-africa"></i></div>
-            <h3>Multilingual</h3>
-            <p>
-              We celebrate and support our learners' home languages while
-              developing strong English and isiXhosa literacy.
-            </p>
-          </div>
+          <ol class="values">
+            <li>
+              <h3>CAPS aligned</h3>
+              <p>We fully follow the national CAPS curriculum, so our learners are well prepared for high school and beyond.</p>
+            </li>
+            <li>
+              <h3>Faith in every day</h3>
+              <p>Christian values and biblical principles are woven naturally into daily lessons, devotions and school life.</p>
+            </li>
+            <li>
+              <h3>Learner-centred</h3>
+              <p>We teach to every learner's strengths, giving each child the attention and support they need to succeed.</p>
+            </li>
+            <li>
+              <h3>Multilingual</h3>
+              <p>We celebrate and support our learners' home languages while developing strong English and isiXhosa literacy.</p>
+            </li>
+          </ol>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ── PHASES & SUBJECTS ──────────────────── -->
-    <section class="bg-grey">
-      <div class="container">
-        <h2 class="section-title">Grades &amp; Subjects</h2>
-        <div class="section-divider"></div>
-        <p class="section-subtitle">
-          Browse by grade phase to see the subjects offered at each level.
-        </p>
-
-        <div class="grade-tabs">
-          <button class="grade-tab active" onclick="showPhase('foundation')">
-            Foundation Phase (Gr R–3)
-          </button>
-          <button class="grade-tab" onclick="showPhase('intermediate')">
-            Intermediate Phase (Gr 4–6)
-          </button>
-          <button class="grade-tab" onclick="showPhase('senior')">
-            Senior Phase (Gr 7)
-          </button>
-        </div>
-
-        <!-- Foundation Phase -->
-        <div id="phase-foundation" class="phase-content">
-          <h3
-            style="
-              text-align: center;
-              margin-bottom: 1.5rem;
-              color: var(--dark);
-            "
-          >
-            Foundation Phase — Grade R to Grade 3
-          </h3>
-          <div class="subjects-grid">
-            <div class="subject-card">
-              <div class="subject-icon">
-                <i class="fa-solid fa-language"></i>
-              </div>
-              <h4>Home Language</h4>
+      <!-- Subjects -->
+      <section class="section section--tint" id="subjects">
+        <div class="wrap">
+          <p class="label">Grades and subjects</p>
+          <h2>What each phase studies</h2>
+          <div class="phases">
+            <div class="phase">
+              <h3>Foundation Phase</h3>
+              <span class="phase__grades">Grade R to Grade 3</span>
+              <ul class="checklist">
+                <li>Home Language</li>
+                <li>First Additional Language</li>
+                <li>Mathematics</li>
+                <li>Life Skills</li>
+                <li>Christian Education</li>
+                <li>Creative Arts</li>
+                <li>Physical Education</li>
+                <li>Music</li>
+              </ul>
             </div>
-            <div class="subject-card">
-              <div class="subject-icon">
-                <i class="fa-solid fa-earth-africa"></i>
-              </div>
-              <h4>First Additional Language</h4>
+            <div class="phase">
+              <h3>Intermediate Phase</h3>
+              <span class="phase__grades">Grade 4 to Grade 6</span>
+              <ul class="checklist">
+                <li>Home Language</li>
+                <li>First Additional Language</li>
+                <li>Mathematics</li>
+                <li>Natural Sciences &amp; Technology</li>
+                <li>Social Sciences</li>
+                <li>Creative Arts</li>
+                <li>Life Skills</li>
+                <li>Physical Education</li>
+                <li>Christian Education</li>
+                <li>Technology</li>
+              </ul>
             </div>
-            <div class="subject-card">
-              <div class="subject-icon">
-                <i class="fa-solid fa-calculator"></i>
-              </div>
-              <h4>Mathematics</h4>
-            </div>
-            <div class="subject-card">
-              <div class="subject-icon">
-                <i class="fa-solid fa-seedling"></i>
-              </div>
-              <h4>Life Skills</h4>
-            </div>
-            <div class="subject-card">
-              <div class="subject-icon"><i class="fa-solid fa-cross"></i></div>
-              <h4>Christian Education</h4>
-            </div>
-            <div class="subject-card">
-              <div class="subject-icon">
-                <i class="fa-solid fa-palette"></i>
-              </div>
-              <h4>Creative Arts</h4>
-            </div>
-            <div class="subject-card">
-              <div class="subject-icon"><i class="fa-solid fa-futbol"></i></div>
-              <h4>Physical Education</h4>
-            </div>
-            <div class="subject-card">
-              <div class="subject-icon"><i class="fa-solid fa-music"></i></div>
-              <h4>Music</h4>
+            <div class="phase">
+              <h3>Senior Phase</h3>
+              <span class="phase__grades">Grade 7</span>
+              <ul class="checklist">
+                <li>Home Language</li>
+                <li>First Additional Language</li>
+                <li>Mathematics</li>
+                <li>Natural Sciences</li>
+                <li>Technology</li>
+                <li>Social Sciences</li>
+                <li>Economic &amp; Management Sciences</li>
+                <li>Creative Arts</li>
+                <li>Life Orientation</li>
+                <li>Christian Education</li>
+              </ul>
             </div>
           </div>
         </div>
+      </section>
 
-        <!-- Intermediate Phase -->
-        <div
-          id="phase-intermediate"
-          class="phase-content"
-          style="display: none"
-        >
-          <h3
-            style="
-              text-align: center;
-              margin-bottom: 1.5rem;
-              color: var(--dark);
-            "
-          >
-            Intermediate Phase — Grade 4 to Grade 6
-          </h3>
-          <div class="subjects-grid">
-            <div class="subject-card">
-              <div class="subject-icon">
-                <i class="fa-solid fa-language"></i>
-              </div>
-              <h4>Home Language</h4>
-            </div>
-            <div class="subject-card">
-              <div class="subject-icon">
-                <i class="fa-solid fa-earth-africa"></i>
-              </div>
-              <h4>First Additional Language</h4>
-            </div>
-            <div class="subject-card">
-              <div class="subject-icon">
-                <i class="fa-solid fa-calculator"></i>
-              </div>
-              <h4>Mathematics</h4>
-            </div>
-            <div class="subject-card">
-              <div class="subject-icon"><i class="fa-solid fa-flask"></i></div>
-              <h4>Natural Sciences &amp; Technology</h4>
-            </div>
-            <div class="subject-card">
-              <div class="subject-icon"><i class="fa-solid fa-map"></i></div>
-              <h4>Social Sciences</h4>
-            </div>
-            <div class="subject-card">
-              <div class="subject-icon">
-                <i class="fa-solid fa-palette"></i>
-              </div>
-              <h4>Creative Arts</h4>
-            </div>
-            <div class="subject-card">
-              <div class="subject-icon">
-                <i class="fa-solid fa-apple-whole"></i>
-              </div>
-              <h4>Life Skills</h4>
-            </div>
-            <div class="subject-card">
-              <div class="subject-icon"><i class="fa-solid fa-futbol"></i></div>
-              <h4>Physical Education</h4>
-            </div>
-            <div class="subject-card">
-              <div class="subject-icon"><i class="fa-solid fa-cross"></i></div>
-              <h4>Christian Education</h4>
-            </div>
-            <div class="subject-card">
-              <div class="subject-icon"><i class="fa-solid fa-laptop"></i></div>
-              <h4>Technology</h4>
-            </div>
+      <!-- Beyond the classroom -->
+      <section class="band band--right" style="--focus: 50% 8%">
+        <picture class="band__media">
+          <source type="image/webp" srcset="/_images/web/hero-trophies-800.webp 800w, /_images/web/hero-trophies-1280.webp 1280w" sizes="100vw" />
+          <img
+            src="/_images/web/hero-trophies-800.jpg"
+            srcset="/_images/web/hero-trophies-800.jpg 800w, /_images/web/hero-trophies-1280.jpg 1280w"
+            sizes="100vw"
+            width="1280"
+            height="960"
+            alt="Victory learners holding two trophies and a ball high above their heads on the sports field"
+            loading="lazy"
+          />
+        </picture>
+        <div class="wrap band__inner">
+          <div class="band__panel">
+            <span class="band__meta">Beyond the classroom</span>
+            <h2>The whole child</h2>
+            <p>
+              At Victory Primary we believe in developing the whole child, in
+              and out of the classroom: on the sports field, on stage and in
+              the library.
+            </p>
+            <a href="/gallery" class="btn btn--line-light">See the photos</a>
           </div>
         </div>
+      </section>
 
-        <!-- Senior Phase (Gr 7) -->
-        <div id="phase-senior" class="phase-content" style="display: none">
-          <h3
-            style="
-              text-align: center;
-              margin-bottom: 1.5rem;
-              color: var(--dark);
-            "
-          >
-            Senior Phase — Grade 7
-          </h3>
-          <div class="subjects-grid">
-            <div class="subject-card">
-              <div class="subject-icon">
-                <i class="fa-solid fa-language"></i>
-              </div>
-              <h4>Home Language</h4>
-            </div>
-            <div class="subject-card">
-              <div class="subject-icon">
-                <i class="fa-solid fa-earth-africa"></i>
-              </div>
-              <h4>First Additional Language</h4>
-            </div>
-            <div class="subject-card">
-              <div class="subject-icon">
-                <i class="fa-solid fa-calculator"></i>
-              </div>
-              <h4>Mathematics</h4>
-            </div>
-            <div class="subject-card">
-              <div class="subject-icon"><i class="fa-solid fa-flask"></i></div>
-              <h4>Natural Sciences</h4>
-            </div>
-            <div class="subject-card">
-              <div class="subject-icon">
-                <i class="fa-solid fa-lightbulb"></i>
-              </div>
-              <h4>Technology</h4>
-            </div>
-            <div class="subject-card">
-              <div class="subject-icon"><i class="fa-solid fa-map"></i></div>
-              <h4>Social Sciences</h4>
-            </div>
-            <div class="subject-card">
-              <div class="subject-icon"><i class="fa-solid fa-coins"></i></div>
-              <h4>Economic &amp; Management Sciences</h4>
-            </div>
-            <div class="subject-card">
-              <div class="subject-icon">
-                <i class="fa-solid fa-palette"></i>
-              </div>
-              <h4>Creative Arts</h4>
-            </div>
-            <div class="subject-card">
-              <div class="subject-icon">
-                <i class="fa-solid fa-apple-whole"></i>
-              </div>
-              <h4>Life Orientation</h4>
-            </div>
-            <div class="subject-card">
-              <div class="subject-icon"><i class="fa-solid fa-cross"></i></div>
-              <h4>Christian Education</h4>
-            </div>
+      <section class="section section--white">
+        <div class="wrap">
+          <p class="label">Extra-curricular</p>
+          <h2>Activities</h2>
+          <ul class="features">
+            <li>
+              <h3>Sport</h3>
+              <p>Football, netball, athletics and more. Sport teaches teamwork, discipline and healthy competition.</p>
+            </li>
+            <li>
+              <h3>Creative arts</h3>
+              <p>Drama, visual arts and crafts give our learners a creative outlet and build confidence.</p>
+            </li>
+            <li>
+              <h3>Choir and music</h3>
+              <p>Our school choir praises God and represents Victory Primary at community and district events.</p>
+            </li>
+            <li>
+              <h3>Reading club</h3>
+              <p>We nurture a love of reading through our weekly reading club and well-stocked school library.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section scripture">
+        <div class="wrap">
+          <img class="scripture__crest" src="/_images/web/crest-192.webp" alt="" width="192" height="192" loading="lazy" />
+          <blockquote>
+            <p>“The beginning of wisdom is this: Get wisdom, and whatever you get, get insight.”</p>
+            <cite>Proverbs 4:7</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="apply-band">
+        <div class="wrap">
+          <div>
+            <span class="ribbon ribbon--gold">Admissions</span>
+            <h2>Applications for 2027 are open</h2>
+            <p>
+              Give your child a Christ-centred foundation for life. Download the
+              application form, or call the office and we'll talk you through it.
+            </p>
+          </div>
+          <div class="btn-row">
+            <a href="/admissions" class="btn btn--gold">How to apply</a>
+            <a href="/contact" class="btn btn--line-light">Contact us</a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- ── EXTRA-CURRICULAR ───────────────────── -->
-    <section>
-      <div class="container">
-        <h2 class="section-title">Extra-Curricular Activities</h2>
-        <div class="section-divider"></div>
-        <p class="section-subtitle">
-          At Victory Primary, we believe in developing the whole child — in and
-          out of the classroom.
-        </p>
-        <div class="values-grid">
-          <div class="value-card">
-            <div class="value-icon"><i class="fa-solid fa-futbol"></i></div>
-            <h3>Sport</h3>
-            <p>
-              Football, netball, athletics, and more — sport teaches teamwork,
-              discipline, and healthy competition.
-            </p>
-          </div>
-          <div class="value-card">
-            <div class="value-icon"><i class="fa-solid fa-palette"></i></div>
-            <h3>Creative Arts</h3>
-            <p>
-              Drama, visual arts, and crafts give our learners a creative outlet
-              and build confidence.
-            </p>
-          </div>
-          <div class="value-card">
-            <div class="value-icon"><i class="fa-solid fa-music"></i></div>
-            <h3>Choir &amp; Music</h3>
-            <p>
-              Our school choir praises God and represents Victory Primary at
-              community and district events.
-            </p>
-          </div>
-          <div class="value-card">
-            <div class="value-icon"><i class="fa-solid fa-book-open"></i></div>
-            <h3>Reading Club</h3>
-            <p>
-              We nurture a love of reading through our weekly reading club and
-              well-stocked school library.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── SCRIPTURE BANNER ───────────────────── -->
-    <div class="scripture-banner">
-      <div class="container">
-        <blockquote>
-          "The beginning of wisdom is this: Get wisdom, and whatever you get,
-          get insight."
-        </blockquote>
-        <cite>— Proverbs 4:7</cite>
-      </div>
-    </div>
-
-    <!-- ── FOOTER ─────────────────────────────── -->
-    <footer>
-      <div class="container">
+    <footer class="site-footer">
+      <div class="wrap">
         <div class="footer-grid">
           <div class="footer-brand">
-            <img
-              src="/_images/logo (2).png"
-              alt="Victory Primary School"
-              class="footer-logo"
-            />
-            <h3>Victory Primary School</h3>
-            <span class="motto">"In God We Trust"</span>
+            <img src="/_images/web/crest-192.webp" alt="" width="192" height="192" loading="lazy" />
+            <p class="footer-brand__name">Victory Primary School</p>
+            <p class="footer-brand__motto">In God We Trust</p>
             <p>
-              A Christian primary school in Ngcobo, Eastern Cape, nurturing
+              A Christian primary school in Ngcobo, Eastern Cape, teaching
               learners from Grade R to Grade 7 since 2017.
             </p>
           </div>
-          <div class="footer-col">
-            <h4>Quick Links</h4>
+          <div>
+            <h2>Explore</h2>
             <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/about">About Us</a></li>
+              <li><a href="/about">About us</a></li>
               <li><a href="/academics">Academics</a></li>
+              <li><a href="/admissions">Admissions</a></li>
+              <li><a href="/admissions#fees">School fees</a></li>
+              <li><a href="/events">Events</a></li>
               <li><a href="/gallery">Gallery</a></li>
             </ul>
           </div>
-          <div class="footer-col">
-            <h4>School</h4>
-            <ul>
-              <li><a href="/events">Events</a></li>
-              <li><a href="/admissions">Admissions</a></li>
-              <li><a href="/contact">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Contact</h4>
-            <ul>
-              <li><a href="#">Ngcobo, Eastern Cape</a></li>
+          <div>
+            <h2>Contact information</h2>
+            <ul class="footer-contact">
               <li>
-                <a href="mailto:victoryprimaryec@gmail.com"
-                  >victoryprimaryec@gmail.com</a
-                >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+                <a href="tel:+27699361866">069 936 1866</a>
               </li>
-              <li><a href="tel:+27699361866">069 936 1866</a></li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+                <a href="mailto:victoryprimaryec@gmail.com">victoryprimaryec@gmail.com</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                <span>Ngcobo, Eastern Cape</span>
+              </li>
             </ul>
+            <a href="/contact" class="btn btn--gold">Contact us</a>
           </div>
         </div>
-        <div class="footer-bottom">
-          <span
-            >© 2026 Victory Primary School, Ngcobo. All rights reserved.</span
-          >
-          <span class="love">Established 2017 · In God We Trust ✝</span>
+      </div>
+      <div class="footer-bottom">
+        <div class="wrap">
+          <p>© 2026 Victory Primary School, Ngcobo · In God We Trust</p>
         </div>
       </div>
     </footer>
 
-    <script>
-      function toggleNav() {
-        document.getElementById("navLinks").classList.toggle("open");
-      }
-      function showPhase(phase) {
-        document
-          .querySelectorAll(".phase-content")
-          .forEach((el) => (el.style.display = "none"));
-        document
-          .querySelectorAll(".grade-tab")
-          .forEach((el) => el.classList.remove("active"));
-        document.getElementById("phase-" + phase).style.display = "block";
-        event.target.classList.add("active");
-      }
-    </script>
+    <script src="/js/site.js" defer></script>
   </body>
 </html>

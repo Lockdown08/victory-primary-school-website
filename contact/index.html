@@ -1,499 +1,280 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+    <title>Contact us · Victory Primary School, Ngcobo</title>
+    <meta name="description" content="Phone, email, office hours and a map for Victory Primary School in Ngcobo, Eastern Cape, plus a form to send the office a message." />
+    <meta name="theme-color" content="#3a1119" />
+    <link rel="preload" href="/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/public-sans-400.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/css/victory.css" />
     <link rel="icon" href="/favicon.ico" sizes="48x48" />
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
-    <!-- ── NAVIGATION ─────────────────────────── -->
-    <nav>
-      <div class="nav-inner">
-        <a href="/" class="nav-brand">
-          <img
-            src="/_images/logo (2).png"
-            alt="Victory Primary School"
-            class="nav-logo"
-          />
-          <div class="nav-name">
-            <span class="school">Victory Primary School</span>
-            <span class="tagline">In God We Trust</span>
-          </div>
-        </a>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/academics">Academics</a></li>
-          <li><a href="/gallery">Gallery</a></li>
-          <li><a href="/events">Events</a></li>
-          <li><a href="/contact" class="active">Contact</a></li>
-          <li><a href="/admissions" class="nav-cta">Admissions</a></li>
-        </ul>
-        <div class="nav-hamburger" id="hamburger" onclick="toggleNav()">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-    </nav>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- ── PAGE HERO ──────────────────────────── -->
-    <div class="page-hero">
-      <div class="container page-hero-content">
-        <div class="breadcrumb">
-          <a href="/">Home</a><sep>/</sep><span>Contact</span>
+    <div class="topbar">
+      <div class="wrap">
+        <div class="topbar__contact">
+          <a href="tel:+27699361866">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+            069 936 1866
+          </a>
+          <a href="mailto:victoryprimaryec@gmail.com" class="topbar__email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+            victoryprimaryec@gmail.com
+          </a>
         </div>
-        <h1>Get in Touch</h1>
-        <p>
-          We'd love to hear from you. Reach out to our friendly team — we're
-          here to help.
-        </p>
+        <p class="topbar__motto">In God We Trust</p>
       </div>
     </div>
 
-    <!-- ── CONTACT SECTION ───────────────────── -->
-    <section>
-      <div class="container">
-        <div class="contact-grid">
-          <!-- Contact Details -->
+    <header class="site-header">
+      <div class="wrap site-header__bar">
+        <a href="/" class="brand">
+          <img src="/_images/web/crest-192.webp" alt="" width="192" height="192" />
+          <span class="brand__name">
+            Victory
+            <span class="brand__sub">Primary School</span>
+          </span>
+        </a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+          <span class="menu-toggle__icon" aria-hidden="true"></span>
+          <span class="menu-toggle__label">Menu</span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Main">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/academics">Academics</a></li>
+            <li><a href="/events">Events</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/contact" aria-current="page">Contact</a></li>
+            <li><a href="/admissions" class="nav-apply">Admissions</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero" style="--focus: 50% 45%">
+        <picture class="page-hero__media">
+          <source type="image/webp" srcset="/_images/web/banner-contact-800.webp 800w, /_images/web/banner-contact-1280.webp 1280w" sizes="100vw" />
+          <img
+            src="/_images/web/banner-contact-800.jpg"
+            srcset="/_images/web/banner-contact-800.jpg 800w, /_images/web/banner-contact-1280.jpg 1280w"
+            sizes="100vw"
+            alt="Learners lined up along the school buildings for assembly"
+            fetchpriority="high"
+          />
+        </picture>
+        <div class="wrap page-hero__text">
+          <nav class="crumbs" aria-label="Breadcrumb">
+            <ol>
+              <li><a href="/">Home</a></li>
+              <li><span aria-current="page">Contact</span></li>
+            </ol>
+          </nav>
+        <h1>Contact us</h1>
+        <p class="page-hero__lead">
+          We'd love to hear from you. Call, email or send a message, and our
+          office will help.
+        </p>
+      </div>
+      </section>
+
+      <section class="section section--white">
+        <div class="wrap contact-layout">
           <div>
-            <h2 style="color: var(--dark); margin-bottom: 0.4rem">
-              Contact Information
-            </h2>
-            <div class="section-divider" style="margin: 0.6rem 0 1.5rem"></div>
-            <p>
-              We welcome all enquiries from parents, prospective families, and
-              community members. Our office is open during school hours.
+            <p class="label">Get in touch</p>
+            <h2>Contact information</h2>
+            <p class="intro">
+              We welcome enquiries from parents, new families and the
+              community. The office is open during school hours.
             </p>
-
-            <div class="contact-info">
-              <div class="contact-card">
-                <div class="contact-icon">
-                  <i class="fa-solid fa-location-dot"></i>
-                </div>
-                <div>
-                  <h4>Physical Address</h4>
-                  <p>
-                    Victory Primary School<br />Ngcobo, Eastern Cape<br />South
-                    Africa
-                  </p>
-                </div>
-              </div>
-              <div class="contact-card">
-                <div class="contact-icon">
-                  <i class="fa-solid fa-phone"></i>
-                </div>
-                <div>
-                  <h4>Telephone</h4>
-                  <p>
-                    <a
-                      href="tel:+27699361866"
-                      style="color: var(--red); font-weight: 700"
-                      >069 936 1866</a
-                    >
-                  </p>
-                  <p style="font-size: 0.82rem; margin: 0">
-                    Monday – Friday · 07:00 – 15:30
-                  </p>
-                </div>
-              </div>
-              <div class="contact-card">
-                <div class="contact-icon">
-                  <i class="fa-solid fa-envelope"></i>
-                </div>
-                <div>
-                  <h4>Email Address</h4>
-                  <p>
-                    <a
-                      href="mailto:victoryprimaryec@gmail.com"
-                      style="color: var(--red); font-weight: 700"
-                      >victoryprimaryec@gmail.com</a
-                    >
-                  </p>
-                  <p style="font-size: 0.82rem; margin: 0">
-                    We aim to respond within 1–2 school days.
-                  </p>
-                </div>
-              </div>
-              <div class="contact-card">
-                <div class="contact-icon">
-                  <i class="fa-solid fa-clock"></i>
-                </div>
-                <div>
-                  <h4>Office Hours</h4>
-                  <p>
-                    Monday – Friday: 07:00 – 15:30<br />Saturday & Sunday:
-                    Closed<br />School holidays: Closed
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Google Maps -->
-            <div
-              style="
-                margin-top: 2rem;
-                border-radius: var(--radius);
-                overflow: hidden;
-                box-shadow: var(--shadow-md);
-              "
-            >
+            <ul class="contact-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+                <h3>Telephone</h3>
+                <p><a href="tel:+27699361866">069 936 1866</a><small>Monday to Friday, 07:00 – 15:30</small></p>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+                <h3>Email</h3>
+                <p><a href="mailto:victoryprimaryec@gmail.com">victoryprimaryec@gmail.com</a><small>We aim to reply within 1–2 school days.</small></p>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 22s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                <h3>Address</h3>
+                <p>Victory Primary School<br />Ngcobo, Eastern Cape<br />South Africa</p>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M12 7v5l3 2"/></svg>
+                <h3>Office hours</h3>
+                <p>Monday to Friday: 07:00 – 15:30<br />Weekends and school holidays: closed</p>
+              </li>
+            </ul>
+            <div class="map">
               <iframe
+                title="Map showing Victory Primary School in Ngcobo"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3394.9668812474774!2d27.98523097522588!3d-31.68947330950546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e604df3d00057bd%3A0x1dbb9b3ca183819e!2sVictory%20Primary%20school!5e0!3m2!1sen!2sza!4v1778250384037!5m2!1sen!2sza"
-                width="100%"
-                height="300"
-                style="border: 0; display: block"
-                allowfullscreen=""
                 loading="lazy"
+                allowfullscreen
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
           </div>
 
-          <!-- Contact Form — submissions delivered to victoryprimaryec@gmail.com via Formspree -->
-          <!-- SETUP: sign up free at formspree.io, create a form, then replace YOUR_FORM_ID below -->
-          <form
-            class="contact-form"
-            id="contactForm"
-            action="https://formspree.io/f/xgodneev"
-            method="POST"
-          >
-            <input
-              type="hidden"
-              name="_subject"
-              value="Website Enquiry — Victory Primary School"
-            />
-
-            <h3>Send Us a Message</h3>
-            <p style="font-size: 0.9rem; margin-bottom: 1.5rem">
-              Fill in the form below and a member of our team will get back to
-              you as soon as possible.
-            </p>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="firstName">First Name *</label>
-                <input
-                  type="text"
-                  id="firstName"
-                  name="first-name"
-                  placeholder="Your first name"
-                  required
-                />
+          <!-- Messages go to victoryprimaryec@gmail.com through Formspree -->
+          <form class="form" action="https://formspree.io/f/xgodneev" method="POST" data-send>
+            <input type="hidden" name="_subject" value="Website enquiry — Victory Primary School" />
+            <h2>Send us a message</h2>
+            <p class="intro">Fill in the form and someone from the office will get back to you.</p>
+            <div class="form__row">
+              <div class="field">
+                <label for="firstName">First name</label>
+                <input type="text" id="firstName" name="first-name" autocomplete="given-name" required />
               </div>
-              <div class="form-group">
-                <label for="lastName">Last Name *</label>
-                <input
-                  type="text"
-                  id="lastName"
-                  name="last-name"
-                  placeholder="Your last name"
-                  required
-                />
+              <div class="field">
+                <label for="lastName">Last name</label>
+                <input type="text" id="lastName" name="last-name" autocomplete="family-name" required />
               </div>
             </div>
-
-            <div class="form-group">
-              <label for="email">Email Address *</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="your@email.com"
-                required
-              />
+            <div class="field">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" autocomplete="email" required />
             </div>
-
-            <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="+27 00 000 0000"
-              />
+            <div class="field">
+              <label for="phone">Phone number <span style="font-weight: 400; color: var(--muted)">(optional)</span></label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" />
             </div>
-
-            <div class="form-group">
-              <label for="subject">Subject *</label>
+            <div class="field">
+              <label for="subject">What is it about?</label>
               <select id="subject" name="subject" required>
-                <option value="" disabled selected>Select a subject…</option>
-                <option>Admissions Enquiry</option>
-                <option>General Information</option>
-                <option>School Fees</option>
-                <option>Academic Concern</option>
-                <option>Events &amp; Calendar</option>
+                <option value="" disabled selected>Choose one…</option>
+                <option>Admissions enquiry</option>
+                <option>General information</option>
+                <option>School fees</option>
+                <option>Academic concern</option>
+                <option>Events and calendar</option>
                 <option>Other</option>
               </select>
             </div>
-
-            <div class="form-group">
-              <label for="message">Message *</label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Tell us how we can help you…"
-                required
-              ></textarea>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
             </div>
-
-            <button
-              type="submit"
-              id="submitBtn"
-              class="btn btn-primary"
-              style="width: 100%; justify-content: center"
-            >
-              <i class="fa-solid fa-paper-plane"></i> Send Message
-            </button>
-
-            <p
-              id="formSuccess"
-              style="
-                display: none;
-                color: var(--red);
-                font-weight: 700;
-                text-align: center;
-                margin-top: 1rem;
-              "
-            >
-              <i class="fa-solid fa-circle-check"></i> Thank you! Your message
-              has been received. We'll be in touch soon.
-            </p>
-            <p
-              id="formError"
-              style="
-                display: none;
-                color: #c0392b;
-                text-align: center;
-                margin-top: 1rem;
-              "
-            >
-              <i class="fa-solid fa-triangle-exclamation"></i> Something went
-              wrong. Please try again or call us on
-              <a href="tel:+27699361866">069 936 1866</a>.
-            </p>
-
-            <p
-              style="
-                font-size: 0.78rem;
-                color: var(--grey-text);
-                text-align: center;
-                margin-top: 1rem;
-              "
-            >
-              ✝ "Ask and it will be given to you; seek and you will find." —
-              Matthew 7:7
-            </p>
+            <button type="submit" class="btn btn--maroon">Send message</button>
+            <p class="form__status" role="status" hidden></p>
+            <p class="form__note">“Ask and it will be given to you; seek and you will find.” Matthew 7:7</p>
           </form>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ── FAQ ────────────────────────────────── -->
-    <section class="bg-grey">
-      <div class="container" style="max-width: 800px">
-        <h2 class="section-title">Frequently Asked Questions</h2>
-        <div class="section-divider"></div>
-
-        <div
-          style="
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            margin-top: 1rem;
-          "
-        >
-          <div
-            style="
-              background: var(--white);
-              border-radius: var(--radius);
-              padding: 1.4rem;
-              border: 1px solid var(--grey-mid);
-            "
-          >
-            <h4 style="color: var(--red); margin-bottom: 0.4rem">
-              What grades does Victory Primary offer?
-            </h4>
-            <p style="margin: 0; font-size: 0.92rem">
-              We offer Grade R through Grade 7, covering the full primary school
-              journey from the Foundation Phase right through to the Senior
-              Phase.
-            </p>
-          </div>
-          <div
-            style="
-              background: var(--white);
-              border-radius: var(--radius);
-              padding: 1.4rem;
-              border: 1px solid var(--grey-mid);
-            "
-          >
-            <h4 style="color: var(--red); margin-bottom: 0.4rem">
-              Is Victory Primary a fee-paying school?
-            </h4>
-            <p style="margin: 0; font-size: 0.92rem">
-              Yes, we have a school fee structure in place. However, we offer
-              payment arrangements and fee assistance for families who need
-              support. Please speak to the principal confidentially.
-            </p>
-          </div>
-          <div
-            style="
-              background: var(--white);
-              border-radius: var(--radius);
-              padding: 1.4rem;
-              border: 1px solid var(--grey-mid);
-            "
-          >
-            <h4 style="color: var(--red); margin-bottom: 0.4rem">
-              Do I need to be Christian to attend Victory Primary?
-            </h4>
-            <p style="margin: 0; font-size: 0.92rem">
-              While our school is founded on Christian values and faith is
-              central to our school life, we welcome all learners regardless of
-              background. We ask that families respect and support our
-              faith-based ethos.
-            </p>
-          </div>
-          <div
-            style="
-              background: var(--white);
-              border-radius: var(--radius);
-              padding: 1.4rem;
-              border: 1px solid var(--grey-mid);
-            "
-          >
-            <h4 style="color: var(--red); margin-bottom: 0.4rem">
-              When can I apply for the next school year?
-            </h4>
-            <p style="margin: 0; font-size: 0.92rem">
-              Applications for the following year typically open mid-year. We
-              recommend applying as early as possible as spaces are limited.
-              Contact us for current availability.
-            </p>
-          </div>
-          <div
-            style="
-              background: var(--white);
-              border-radius: var(--radius);
-              padding: 1.4rem;
-              border: 1px solid var(--grey-mid);
-            "
-          >
-            <h4 style="color: var(--red); margin-bottom: 0.4rem">
-              Where is the school located?
-            </h4>
-            <p style="margin: 0; font-size: 0.92rem">
-              Victory Primary School is located in Ngcobo, a small town in the
-              Eastern Cape province of South Africa. Contact us for the exact
-              street address and directions.
-            </p>
+      <!-- Questions -->
+      <section class="section section--tint" id="questions">
+        <div class="wrap">
+          <p class="label">Good to know</p>
+          <h2>Common questions</h2>
+          <div class="faq">
+            <details>
+              <summary>What grades does Victory Primary offer?</summary>
+              <p>
+                We offer Grade R through Grade 7, covering the full primary
+                school journey from the Foundation Phase to the Senior Phase.
+              </p>
+            </details>
+            <details>
+              <summary>Is Victory Primary a fee-paying school?</summary>
+              <p>
+                Yes, we have school fees. We also offer payment arrangements
+                and fee assistance for families who need support. Please speak
+                to the principal in confidence.
+              </p>
+            </details>
+            <details>
+              <summary>Do we need to be Christian to attend?</summary>
+              <p>
+                Our school is founded on Christian values and faith is central
+                to school life, but we welcome all learners whatever their
+                background. We ask families to respect and support our
+                faith-based ethos.
+              </p>
+            </details>
+            <details>
+              <summary>When can I apply for next year?</summary>
+              <p>
+                Applications for the following year usually open mid-year. We
+                recommend applying as early as possible because places are
+                limited. <a href="/admissions">See how to apply</a>.
+              </p>
+            </details>
+            <details>
+              <summary>Where is the school?</summary>
+              <p>
+                Victory Primary School is in Ngcobo, a small town in the Eastern
+                Cape. The map above shows where we are; call us for directions.
+              </p>
+            </details>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- ── FOOTER ─────────────────────────────── -->
-    <footer>
-      <div class="container">
+    <footer class="site-footer">
+      <div class="wrap">
         <div class="footer-grid">
           <div class="footer-brand">
-            <img
-              src="/_images/logo (2).png"
-              alt="Victory Primary School"
-              class="footer-logo"
-            />
-            <h3>Victory Primary School</h3>
-            <span class="motto">"In God We Trust"</span>
+            <img src="/_images/web/crest-192.webp" alt="" width="192" height="192" loading="lazy" />
+            <p class="footer-brand__name">Victory Primary School</p>
+            <p class="footer-brand__motto">In God We Trust</p>
             <p>
-              A Christian primary school in Ngcobo, Eastern Cape, nurturing
+              A Christian primary school in Ngcobo, Eastern Cape, teaching
               learners from Grade R to Grade 7 since 2017.
             </p>
           </div>
-          <div class="footer-col">
-            <h4>Quick Links</h4>
+          <div>
+            <h2>Explore</h2>
             <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/about">About Us</a></li>
+              <li><a href="/about">About us</a></li>
               <li><a href="/academics">Academics</a></li>
+              <li><a href="/admissions">Admissions</a></li>
+              <li><a href="/admissions#fees">School fees</a></li>
+              <li><a href="/events">Events</a></li>
               <li><a href="/gallery">Gallery</a></li>
             </ul>
           </div>
-          <div class="footer-col">
-            <h4>School</h4>
-            <ul>
-              <li><a href="/events">Events</a></li>
-              <li><a href="/admissions">Admissions</a></li>
-              <li><a href="/contact">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Contact</h4>
-            <ul>
-              <li><a href="#">Ngcobo, Eastern Cape</a></li>
+          <div>
+            <h2>Contact information</h2>
+            <ul class="footer-contact">
               <li>
-                <a href="mailto:victoryprimaryec@gmail.com"
-                  >victoryprimaryec@gmail.com</a
-                >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+                <a href="tel:+27699361866">069 936 1866</a>
               </li>
-              <li><a href="tel:+27699361866">069 936 1866</a></li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+                <a href="mailto:victoryprimaryec@gmail.com">victoryprimaryec@gmail.com</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                <span>Ngcobo, Eastern Cape</span>
+              </li>
             </ul>
+            <a href="/contact" class="btn btn--gold">Contact us</a>
           </div>
         </div>
-        <div class="footer-bottom">
-          <span
-            >© 2026 Victory Primary School, Ngcobo. All rights reserved.</span
-          >
-          <span class="love">Established 2017 · In God We Trust ✝</span>
+      </div>
+      <div class="footer-bottom">
+        <div class="wrap">
+          <p>© 2026 Victory Primary School, Ngcobo · In God We Trust</p>
         </div>
       </div>
     </footer>
 
-    <script>
-      function toggleNav() {
-        document.getElementById("navLinks").classList.toggle("open");
-      }
-
-      document
-        .getElementById("contactForm")
-        .addEventListener("submit", async function (e) {
-          e.preventDefault();
-          const btn = document.getElementById("submitBtn");
-          btn.innerHTML =
-            '<i class="fa-solid fa-spinner fa-spin"></i> Sending…';
-          btn.disabled = true;
-
-          try {
-            const response = await fetch(this.action, {
-              method: "POST",
-              body: new FormData(this),
-              headers: { Accept: "application/json" },
-            });
-            if (response.ok) {
-              document.getElementById("formSuccess").style.display = "block";
-              document.getElementById("formError").style.display = "none";
-              this.reset();
-              btn.innerHTML =
-                '<i class="fa-solid fa-paper-plane"></i> Send Message';
-              btn.disabled = false;
-            } else {
-              throw new Error();
-            }
-          } catch {
-            document.getElementById("formError").style.display = "block";
-            document.getElementById("formSuccess").style.display = "none";
-            btn.innerHTML =
-              '<i class="fa-solid fa-paper-plane"></i> Send Message';
-            btn.disabled = false;
-          }
-        });
-    </script>
+    <script src="/js/site.js" defer></script>
   </body>
 </html>

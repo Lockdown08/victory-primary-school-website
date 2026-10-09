@@ -24,17 +24,21 @@ Done:
 - New design system in `css/victory.css`, plus `js/site.js` (phone menu).
 - Homepage `index.html` rebuilt on the new system.
 
+- All pages moved onto the new design (October 2026); old `styles.css` and the
+  Font Awesome CDN are gone. Each page has a photo banner (`.page-hero`,
+  `_images/web/banner-*`). The header and footer are copied into every page,
+  so change all seven when editing them.
+- Live touches in `js/site.js`: About's timeline (`.timeline`, the "now" item
+  is `.is-now`; the year in "We are here" comes from today's date), Events marks
+  the current term, past events and the next event from `data-date`, Gallery
+  filters and full-size viewer, Contact form posts to Formspree in the page.
+- Gallery photos are `_images/web/gallery/{sport,prizes,cultural}-NN-{480,1280}`.
+- Events: when the 2027 calendar comes, update the dates in `events/index.html`
+  (`data-date` on each event, `data-start`/`data-end` on each term).
+
 Still to do:
-- Move `about`, `academics`, `admissions`, `events`, `gallery`, `contact` onto
-  `css/victory.css` + `js/site.js`, using the same header/footer markup as
-  `index.html`. Those pages still use the old `styles.css`; delete it once none
-  use it.
-- Gallery: use optimised copies of the photos (see below), not the originals.
-- Admissions: add `id="fees"` to the School Fees section (footer links to
-  `/admissions#fees`).
-- Check every page at 390px and 1280px wide; no sideways scrolling.
-- Lockdown to confirm the homepage "Recently at Victory" captions (written from
-  the photos) and that admissions are for 2027.
+- Lockdown to confirm the homepage photo captions (written from the photos)
+  and that admissions are for 2027.
 
 ## Design system (built from the crest)
 

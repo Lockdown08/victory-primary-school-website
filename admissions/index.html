@@ -1,425 +1,303 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admissions</title>
-    <link rel="stylesheet" href="/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+    <title>Admissions · Victory Primary School, Ngcobo</title>
+    <meta name="description" content="Applications for 2027 are open at Victory Primary School, Ngcobo. How to apply, the application form, required documents, age requirements and school fees." />
+    <meta name="theme-color" content="#3a1119" />
+    <link rel="preload" href="/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/public-sans-400.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/css/victory.css" />
     <link rel="icon" href="/favicon.ico" sizes="48x48" />
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
-    <!-- ── NAVIGATION ─────────────────────────── -->
-    <nav>
-      <div class="nav-inner">
-        <a href="/" class="nav-brand">
-          <img
-            src="/_images/logo (2).png"
-            alt="Victory Primary School"
-            class="nav-logo"
-          />
-          <div class="nav-name">
-            <span class="school">Victory Primary School</span>
-            <span class="tagline">In God We Trust</span>
-          </div>
-        </a>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/academics">Academics</a></li>
-          <li><a href="/gallery">Gallery</a></li>
-          <li><a href="/events">Events</a></li>
-          <li><a href="/contact">Contact</a></li>
-          <li>
-            <a href="/admissions" class="active nav-cta">Admissions</a>
-          </li>
-        </ul>
-        <div class="nav-hamburger" id="hamburger" onclick="toggleNav()">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-    </nav>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- ── PAGE HERO ──────────────────────────── -->
-    <div class="page-hero">
-      <div class="container page-hero-content">
-        <div class="breadcrumb">
-          <a href="/">Home</a><sep>/</sep><span>Admissions</span>
+    <div class="topbar">
+      <div class="wrap">
+        <div class="topbar__contact">
+          <a href="tel:+27699361866">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+            069 936 1866
+          </a>
+          <a href="mailto:victoryprimaryec@gmail.com" class="topbar__email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+            victoryprimaryec@gmail.com
+          </a>
         </div>
-        <h1>Admissions</h1>
-        <p>
-          We warmly welcome applications for Grade R to Grade 7. Let your child
-          begin their Victory journey today.
-        </p>
+        <p class="topbar__motto">In God We Trust</p>
       </div>
     </div>
 
-    <!-- ── WELCOME MESSAGE ───────────────────── -->
-    <section>
-      <div class="container" style="max-width: 800px">
-        <div class="info-box notice">
-          <div class="ib-icon"><i class="fa-solid fa-bell-concierge"></i></div>
-          <div>
-            <h4>2027 Applications Now Open!</h4>
+    <header class="site-header">
+      <div class="wrap site-header__bar">
+        <a href="/" class="brand">
+          <img src="/_images/web/crest-192.webp" alt="" width="192" height="192" />
+          <span class="brand__name">
+            Victory
+            <span class="brand__sub">Primary School</span>
+          </span>
+        </a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+          <span class="menu-toggle__icon" aria-hidden="true"></span>
+          <span class="menu-toggle__label">Menu</span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Main">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/academics">Academics</a></li>
+            <li><a href="/events">Events</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/admissions" aria-current="page" class="nav-apply">Admissions</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero" style="--focus: 50% 30%">
+        <picture class="page-hero__media">
+          <source type="image/webp" srcset="/_images/web/banner-admissions-800.webp 800w, /_images/web/banner-admissions-1280.webp 1280w" sizes="100vw" />
+          <img
+            src="/_images/web/banner-admissions-800.jpg"
+            srcset="/_images/web/banner-admissions-800.jpg 800w, /_images/web/banner-admissions-1280.jpg 1280w"
+            sizes="100vw"
+            alt="Learners wearing award sashes at prize-giving, standing in front of a classroom"
+            fetchpriority="high"
+          />
+        </picture>
+        <div class="wrap page-hero__text">
+          <nav class="crumbs" aria-label="Breadcrumb">
+            <ol>
+              <li><a href="/">Home</a></li>
+              <li><span aria-current="page">Admissions</span></li>
+            </ol>
+          </nav>
+        <h1>Admissions</h1>
+        <p class="page-hero__lead">
+          We warmly welcome applications for Grade R to Grade 7. Let your
+          child begin their Victory journey.
+        </p>
+      </div>
+      </section>
+
+      <!-- How to apply -->
+      <section class="section section--white">
+        <div class="wrap">
+          <div class="notice">
+            <h2>Applications for 2027 are open</h2>
             <p>
-              We are currently accepting applications for the 2027 academic
-              year. Places are limited — apply early to secure your child's spot
-              at Victory Primary School.
+              We are accepting applications for the 2027 school year. Places
+              are limited, so apply early to secure your child's place at
+              Victory Primary School.
             </p>
           </div>
         </div>
-        <h2 class="section-title" style="margin-top: 2rem">How to Apply</h2>
-        <div class="section-divider"></div>
-        <p class="section-subtitle">
-          Our admissions process is simple, welcoming, and guided by God's
-          grace. Follow these steps to join the Victory family.
-        </p>
-      </div>
-    </section>
+      </section>
 
-    <!-- ── STEPS ─────────────────────────────── -->
-    <section class="bg-grey" style="padding-top: 0">
-      <div class="container">
-        <div class="steps-grid">
-          <div class="step-card">
-            <div class="step-icon"><i class="fa-solid fa-phone"></i></div>
-            <h3>Contact the School</h3>
-            <p>
-              Reach out to our office by phone or email to express your interest
-              and request an application form.
-            </p>
-          </div>
-          <div class="step-card">
-            <div class="step-icon">
-              <i class="fa-solid fa-clipboard-list"></i>
-            </div>
-            <h3>Complete the Form</h3>
-            <p>
-              Fill in the application form fully and accurately. Return it to
-              the school office with all required documents.
-            </p>
-          </div>
-          <div class="step-card">
-            <div class="step-icon"><i class="fa-solid fa-handshake"></i></div>
-            <h3>Parent Interview</h3>
-            <p>
-              We invite parents and the prospective learner to a brief, friendly
-              meeting with the principal to get to know each other.
-            </p>
-          </div>
-          <div class="step-card">
-            <div class="step-icon">
-              <i class="fa-solid fa-envelope-circle-check"></i>
-            </div>
-            <h3>Receive Confirmation</h3>
-            <p>
-              Upon acceptance, you'll receive an official letter of placement
-              and your registration pack.
-            </p>
-          </div>
+      <section class="section section--tint" id="apply">
+        <div class="wrap">
+          <p class="label">Four steps</p>
+          <h2>How to apply</h2>
+          <p class="intro">Our admissions process is simple and welcoming. Follow these steps to join the Victory family.</p>
+          <ol class="steps">
+            <li>
+              <h3>Contact the school</h3>
+              <p>Phone or email the office to tell us you're interested, and ask for an application form.</p>
+            </li>
+            <li>
+              <h3>Complete the form</h3>
+              <p>Fill in the form fully and return it to the school office with all the required documents.</p>
+            </li>
+            <li>
+              <h3>Meet the principal</h3>
+              <p>We invite parents and the learner to a short, friendly meeting with the principal to get to know each other.</p>
+            </li>
+            <li>
+              <h3>Receive confirmation</h3>
+              <p>Once your child is accepted, you'll receive an official letter of placement and your registration pack.</p>
+            </li>
+          </ol>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ── APPLICATION DOWNLOAD ─────────────── -->
-    <section>
-      <div class="container" style="max-width: 800px">
-        <h2 class="section-title">Download Application Form</h2>
-        <div class="section-divider"></div>
-        <p class="section-subtitle">
-          Download, print, and complete the official Victory Primary School
-          application form. Return the completed form together with all required
-          documents to the school office.
-        </p>
-        <div class="info-box tip" style="margin-top: 2rem; align-items: center">
-          <div class="ib-icon"><i class="fa-solid fa-file-pdf"></i></div>
-          <div style="flex: 1">
-            <h4>Victory Primary School — Application for Admission</h4>
-            <p style="margin-bottom: 1rem">
-              Official 2027 application form. Print, fill in all sections,
-              attach certified documents, and submit to the school office.
-            </p>
-            <a
-              href="/Victory school App form.pdf"
-              download
-              class="btn btn-primary"
-              style="display: inline-flex; align-items: center; gap: 0.5rem"
-            >
-              <i class="fa-solid fa-download"></i> Download Application Form
-              (PDF)
+      <!-- Application form -->
+      <section class="section section--white" id="form">
+        <div class="wrap">
+          <p class="label">Application form</p>
+          <h2>Download the form</h2>
+          <p class="intro">
+            Print and complete the official application form, then return it to
+            the school office together with all the required documents.
+          </p>
+          <div class="download">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M28 5H12a3 3 0 0 0-3 3v32a3 3 0 0 0 3 3h24a3 3 0 0 0 3-3V16z"/><path d="M28 5v11h11"/><path d="M17 26h14M17 32h14M17 20h6"/></svg>
+            <div>
+              <h3>Application for admission, 2027</h3>
+              <p>PDF, 485 KB. Print it, fill in every section, attach certified documents and hand it in at the office.</p>
+            </div>
+            <a href="/Victory%20school%20App%20form.pdf" download class="btn btn--maroon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 21h16"/></svg>
+              Download the form
             </a>
           </div>
+          <p class="help-line">
+            Need help? Call <a href="tel:+27699361866">069 936 1866</a> or email
+            <a href="mailto:victoryprimaryec@gmail.com">victoryprimaryec@gmail.com</a>.
+          </p>
         </div>
-        <p
-          style="
-            text-align: center;
-            margin-top: 1.5rem;
-            font-size: 0.85rem;
-            color: var(--grey-text);
-          "
-        >
-          Need help? Call us on
-          <a href="tel:+27699361866" style="color: var(--red); font-weight: 700"
-            >069 936 1866</a
-          >
-          or email
-          <a
-            href="mailto:victoryprimaryec@gmail.com"
-            style="color: var(--red); font-weight: 700"
-            >victoryprimaryec@gmail.com</a
-          >
-        </p>
-      </div>
-    </section>
+      </section>
 
-    <!-- ── REQUIREMENTS ───────────────────────── -->
-    <section>
-      <div class="container">
-        <h2 class="section-title">Required Documents</h2>
-        <div class="section-divider"></div>
-        <p class="section-subtitle">
-          Please bring the following documents when submitting your application.
-        </p>
-        <div class="requirements-list" style="max-width: 780px; margin: 0 auto">
-          <div class="req-item">
-            <div class="req-check"><i class="fa-solid fa-check"></i></div>
-            Certified copy of learner's birth certificate
-          </div>
-          <div class="req-item">
-            <div class="req-check"><i class="fa-solid fa-check"></i></div>
-            Certified copy of parent/guardian ID
-          </div>
-          <div class="req-item">
-            <div class="req-check"><i class="fa-solid fa-check"></i></div>
-            Most recent school report (if applicable)
-          </div>
-          <div class="req-item">
-            <div class="req-check"><i class="fa-solid fa-check"></i></div>
-            Transfer card from previous school (if applicable)
-          </div>
-          <div class="req-item">
-            <div class="req-check"><i class="fa-solid fa-check"></i></div>
-            Proof of residential address (e.g. utility bill)
-          </div>
-          <div class="req-item">
-            <div class="req-check"><i class="fa-solid fa-check"></i></div>
-            Immunisation / Road to Health card
-          </div>
-          <div class="req-item">
-            <div class="req-check"><i class="fa-solid fa-check"></i></div>
-            2 recent passport-size photos of the learner
-          </div>
-          <div class="req-item">
-            <div class="req-check"><i class="fa-solid fa-check"></i></div>
-            Completed school application form
+      <!-- Documents -->
+      <section class="section section--tint" id="documents">
+        <div class="wrap">
+          <p class="label">Bring these with you</p>
+          <h2>Required documents</h2>
+          <p class="intro">Please bring the following when you hand in your application.</p>
+          <ul class="checklist checklist--boxed" style="margin-top: 1.75rem">
+            <li>Certified copy of the learner's birth certificate</li>
+            <li>Certified copy of the parent or guardian's ID</li>
+            <li>Most recent school report (if applicable)</li>
+            <li>Transfer card from the previous school (if applicable)</li>
+            <li>Proof of residential address (e.g. a utility bill)</li>
+            <li>Immunisation / Road to Health card</li>
+            <li>2 recent passport-size photos of the learner</li>
+            <li>The completed application form</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Ages -->
+      <section class="section section--white" id="ages">
+        <div class="wrap">
+          <p class="label">Who can apply</p>
+          <h2>Age requirements</h2>
+          <p class="intro">Ages are as on 1 January of the year your child starts.</p>
+          <div class="table-wrap">
+            <table class="table">
+              <thead>
+                <tr><th scope="col">Grade</th><th scope="col">Minimum age</th><th scope="col">Phase</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Grade R</td><td>5 years</td><td>Foundation Phase</td></tr>
+                <tr><td>Grade 1</td><td>6 years</td><td>Foundation Phase</td></tr>
+                <tr><td>Grade 2</td><td>7 years</td><td>Foundation Phase</td></tr>
+                <tr><td>Grade 3</td><td>8 years</td><td>Foundation Phase</td></tr>
+                <tr><td>Grade 4</td><td>9 years</td><td>Intermediate Phase</td></tr>
+                <tr><td>Grade 5</td><td>10 years</td><td>Intermediate Phase</td></tr>
+                <tr><td>Grade 6</td><td>11 years</td><td>Intermediate Phase</td></tr>
+                <tr><td>Grade 7</td><td>12 years</td><td>Senior Phase</td></tr>
+              </tbody>
+            </table>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ── AGE REQUIREMENTS ───────────────────── -->
-    <section class="bg-grey">
-      <div class="container">
-        <h2 class="section-title">Age Requirements</h2>
-        <div class="section-divider"></div>
-        <p class="section-subtitle">
-          The following age guidelines apply when applying for the relevant
-          grade. Ages are as of 1 January of the year of admission.
-        </p>
-        <div style="overflow-x: auto">
-          <table class="fees-table">
-            <thead>
-              <tr>
-                <th>Grade</th>
-                <th>Minimum Age</th>
-                <th>Phase</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Grade R</td>
-                <td>5 years</td>
-                <td>Foundation Phase</td>
-              </tr>
-              <tr>
-                <td>Grade 1</td>
-                <td>6 years</td>
-                <td>Foundation Phase</td>
-              </tr>
-              <tr>
-                <td>Grade 2</td>
-                <td>7 years</td>
-                <td>Foundation Phase</td>
-              </tr>
-              <tr>
-                <td>Grade 3</td>
-                <td>8 years</td>
-                <td>Foundation Phase</td>
-              </tr>
-              <tr>
-                <td>Grade 4</td>
-                <td>9 years</td>
-                <td>Intermediate Phase</td>
-              </tr>
-              <tr>
-                <td>Grade 5</td>
-                <td>10 years</td>
-                <td>Intermediate Phase</td>
-              </tr>
-              <tr>
-                <td>Grade 6</td>
-                <td>11 years</td>
-                <td>Intermediate Phase</td>
-              </tr>
-              <tr>
-                <td>Grade 7</td>
-                <td>12 years</td>
-                <td>Senior Phase</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── SCHOOL FEES ────────────────────────── -->
-    <section>
-      <div class="container">
-        <h2 class="section-title">School Fees</h2>
-        <div class="section-divider"></div>
-        <p class="section-subtitle">
-          Our fees are kept as affordable as possible in order to serve the
-          Ngcobo community. For detailed fee information, please contact the
-          school office directly.
-        </p>
-        <div class="info-box tip" style="max-width: 700px; margin: 0 auto 2rem">
-          <div class="ib-icon"><i class="fa-solid fa-heart"></i></div>
-          <div>
-            <h4>Fee Assistance Available</h4>
+      <!-- Fees -->
+      <section class="section section--tint" id="fees">
+        <div class="wrap">
+          <p class="label">Costs</p>
+          <h2>School fees</h2>
+          <p class="intro">
+            We keep our fees as affordable as possible so that we can serve the
+            Ngcobo community. For the current amounts, please contact the
+            school office.
+          </p>
+          <div class="notice notice--gold" style="margin-top: 1.75rem">
+            <h3>Help with fees</h3>
             <p>
-              We believe that no child should be turned away due to financial
-              constraints. Families in need may apply for a fee reduction or
-              payment arrangement. Speak to the principal in confidence.
+              No child should be turned away because of money. Families in need
+              may apply for a fee reduction or a payment arrangement. Speak to
+              the principal in confidence.
             </p>
           </div>
+          <div class="table-wrap">
+            <table class="table">
+              <thead>
+                <tr><th scope="col">Item</th><th scope="col">Details</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Registration fee</td><td>Contact the school for the current amount</td></tr>
+                <tr><td>Annual school fees</td><td>Contact the school for the current amount</td></tr>
+                <tr><td>Uniform</td><td>Available from the school office</td></tr>
+                <tr><td>Stationery pack</td><td>Depends on the grade; details at registration</td></tr>
+                <tr><td>School fund</td><td>Supports extra-curricular activities</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p style="margin-top: 1.75rem">
+            <a href="/contact" class="btn btn--maroon">Ask for the full fee schedule</a>
+          </p>
         </div>
-        <div style="overflow-x: auto; max-width: 700px; margin: 0 auto">
-          <table class="fees-table">
-            <thead>
-              <tr>
-                <th>Item</th>
-                <th>Details</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Registration Fee</td>
-                <td>Contact school for current amount</td>
-              </tr>
-              <tr>
-                <td>Annual School Fees</td>
-                <td>Contact school for current amount</td>
-              </tr>
-              <tr>
-                <td>Uniform</td>
-                <td>Available from the school office</td>
-              </tr>
-              <tr>
-                <td>Stationery Pack</td>
-                <td>Grade-specific — details at registration</td>
-              </tr>
-              <tr>
-                <td>School Fund</td>
-                <td>Supports extra-curricular activities</td>
-              </tr>
-            </tbody>
-          </table>
+      </section>
+
+      <section class="section scripture">
+        <div class="wrap">
+          <img class="scripture__crest" src="/_images/web/crest-192.webp" alt="" width="192" height="192" loading="lazy" />
+          <blockquote>
+            <p>“Let the little children come to me, and do not hinder them, for the kingdom of heaven belongs to such as these.”</p>
+            <cite>Matthew 19:14</cite>
+          </blockquote>
         </div>
-        <p style="text-align: center; margin-top: 1.5rem">
-          <a href="/contact" class="btn btn-primary"
-            >📞 Contact Us for Full Fee Schedule</a
-          >
-        </p>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- ── SCRIPTURE BANNER ───────────────────── -->
-    <div class="scripture-banner">
-      <div class="container">
-        <blockquote>
-          "Let the little children come to me, and do not hinder them, for the
-          kingdom of heaven belongs to such as these."
-        </blockquote>
-        <cite>— Matthew 19:14</cite>
-      </div>
-    </div>
-
-    <!-- ── FOOTER ─────────────────────────────── -->
-    <footer>
-      <div class="container">
+    <footer class="site-footer">
+      <div class="wrap">
         <div class="footer-grid">
           <div class="footer-brand">
-            <img
-              src="/_images/logo (2).png"
-              alt="Victory Primary School"
-              class="footer-logo"
-            />
-            <h3>Victory Primary School</h3>
-            <span class="motto">"In God We Trust"</span>
+            <img src="/_images/web/crest-192.webp" alt="" width="192" height="192" loading="lazy" />
+            <p class="footer-brand__name">Victory Primary School</p>
+            <p class="footer-brand__motto">In God We Trust</p>
             <p>
-              A Christian primary school in Ngcobo, Eastern Cape, nurturing
+              A Christian primary school in Ngcobo, Eastern Cape, teaching
               learners from Grade R to Grade 7 since 2017.
             </p>
           </div>
-          <div class="footer-col">
-            <h4>Quick Links</h4>
+          <div>
+            <h2>Explore</h2>
             <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/about">About Us</a></li>
+              <li><a href="/about">About us</a></li>
               <li><a href="/academics">Academics</a></li>
+              <li><a href="/admissions">Admissions</a></li>
+              <li><a href="/admissions#fees">School fees</a></li>
+              <li><a href="/events">Events</a></li>
               <li><a href="/gallery">Gallery</a></li>
             </ul>
           </div>
-          <div class="footer-col">
-            <h4>School</h4>
-            <ul>
-              <li><a href="/events">Events</a></li>
-              <li><a href="/admissions">Admissions</a></li>
-              <li><a href="/contact">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Contact</h4>
-            <ul>
-              <li><a href="#">Ngcobo, Eastern Cape</a></li>
+          <div>
+            <h2>Contact information</h2>
+            <ul class="footer-contact">
               <li>
-                <a href="mailto:victoryprimaryec@gmail.com"
-                  >victoryprimaryec@gmail.com</a
-                >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+                <a href="tel:+27699361866">069 936 1866</a>
               </li>
-              <li><a href="tel:+27699361866">069 936 1866</a></li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+                <a href="mailto:victoryprimaryec@gmail.com">victoryprimaryec@gmail.com</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                <span>Ngcobo, Eastern Cape</span>
+              </li>
             </ul>
+            <a href="/contact" class="btn btn--gold">Contact us</a>
           </div>
         </div>
-        <div class="footer-bottom">
-          <span
-            >© 2026 Victory Primary School, Ngcobo. All rights reserved.</span
-          >
-          <span class="love">Established 2017 · In God We Trust ✝</span>
+      </div>
+      <div class="footer-bottom">
+        <div class="wrap">
+          <p>© 2026 Victory Primary School, Ngcobo · In God We Trust</p>
         </div>
       </div>
     </footer>
 
-    <script>
-      function toggleNav() {
-        document.getElementById("navLinks").classList.toggle("open");
-      }
-    </script>
+    <script src="/js/site.js" defer></script>
   </body>
 </html>
