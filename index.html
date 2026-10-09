@@ -1,349 +1,309 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Victory Primary School</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    <title>Victory Primary School · Ngcobo, Eastern Cape</title>
+    <meta
+      name="description"
+      content="Victory Primary School is a Christian primary school in Ngcobo, Eastern Cape, teaching learners from Grade R to Grade 7 since 2017. 2027 applications are open."
     />
+    <meta name="theme-color" content="#3a1119" />
+    <link rel="preload" href="/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/public-sans-400.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/css/victory.css" />
     <link rel="icon" href="/favicon.ico" sizes="48x48" />
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
-    <!-- ── NAVIGATION ─────────────────────────── -->
-    <nav>
-      <div class="nav-inner">
-        <a href="/" class="nav-brand">
-          <img
-            src="_images/logo (2).png"
-            alt="Victory Primary School"
-            class="nav-logo"
-          />
-          <div class="nav-name">
-            <span class="school">Victory Primary School</span>
-            <span class="tagline">In God We Trust</span>
-          </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap site-header__bar">
+        <a href="/" class="brand">
+          <img src="/_images/web/crest-96.webp" alt="" width="96" height="96" />
+          <span class="brand__name">
+            Victory Primary School
+            <span class="brand__motto">In God We Trust</span>
+          </span>
         </a>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="/" class="active">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/academics">Academics</a></li>
-          <li><a href="/gallery">Gallery</a></li>
-          <li><a href="/events">Events</a></li>
-          <li><a href="/contact">Contact</a></li>
-          <li><a href="/admissions" class="nav-cta">Admissions</a></li>
-        </ul>
-        <div class="nav-hamburger" id="hamburger" onclick="toggleNav()">
-          <span></span><span></span><span></span>
-        </div>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+          <span class="menu-toggle__icon" aria-hidden="true"></span>
+          <span class="menu-toggle__label">Menu</span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Main">
+          <ul>
+            <li><a href="/" aria-current="page">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/academics">Academics</a></li>
+            <li><a href="/events">Events</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/admissions" class="nav-apply">Admissions</a></li>
+          </ul>
+        </nav>
       </div>
-    </nav>
+    </header>
 
-    <!-- ── HERO ───────────────────────────────── -->
-    <section class="hero">
-      <div class="hero-pattern"></div>
-      <div class="container">
-        <div class="hero-content">
-          <div class="hero-badge">✝ Christian Primary School · Est. 2017</div>
-          <h1>Victory Primary<span>School</span></h1>
-          <p class="hero-motto">"In God We Trust"</p>
-          <p>
-            Nurturing young minds in faith, knowledge, and character — from
-            Grade R to Grade 7 in the heart of Ngcobo.
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero">
+        <figure class="hero__photo" style="margin: 0">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="/_images/web/hero-trophies-800.webp 800w, /_images/web/hero-trophies-1280.webp 1280w"
+              sizes="(min-width: 64em) 55vw, 100vw"
+            />
+            <img
+              src="/_images/web/hero-trophies-800.jpg"
+              srcset="/_images/web/hero-trophies-800.jpg 800w, /_images/web/hero-trophies-1280.jpg 1280w"
+              sizes="(min-width: 64em) 55vw, 100vw"
+              width="1280"
+              height="960"
+              alt="Victory learners holding two trophies and a ball high above their heads on the sports field"
+              fetchpriority="high"
+            />
+          </picture>
+        </figure>
+        <div class="hero__text">
+          <span class="ribbon">Ngcobo · Eastern Cape · Est. 2017</span>
+          <h1>Victory Primary <em>School</em></h1>
+          <p class="hero__lead">
+            A Christian primary school for Grade R to Grade 7. We teach the
+            CAPS curriculum, and we care just as much about faith and
+            character as we do about marks.
           </p>
-          <div class="hero-buttons">
-            <a href="/admissions" class="btn btn-primary"
-              >Apply for Admission</a
-            >
-            <a href="/about" class="btn btn-secondary"
-              >Discover Our School</a
-            >
+          <div class="btn-row">
+            <a href="/admissions" class="btn btn--gold">Apply for 2027</a>
+            <a href="tel:+27699361866" class="btn btn--line-light">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+              Call the office
+            </a>
           </div>
         </div>
-      </div>
-      <div class="hero-stats">
-        <div class="hero-stat">
-          <strong>R–7</strong>
-          <span>Grades</span>
-        </div>
-        <div class="hero-stat">
-          <strong>2017</strong>
-          <span>Established</span>
-        </div>
-        <div class="hero-stat">
-          <strong>Faith</strong>
-          <span>Founded</span>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ── WELCOME ────────────────────────────── -->
-    <section>
-      <div class="container">
-        <div class="welcome-grid">
-          <div class="welcome-image">
-            <div class="welcome-img-placeholder">
-              <div class="big-icon">🏫</div>
-              <p>Victory Primary School · Ngcobo</p>
-            </div>
-            <div class="welcome-badge">
-              <strong>8</strong>
-              <span>Years of<br />Excellence</span>
-            </div>
+      <div class="facts-bar">
+      <ul class="facts wrap" aria-label="At a glance">
+        <li><strong>Grade R–7</strong><span>Foundation to Senior Phase</span></li>
+        <li><strong>Since 2017</strong><span>Serving Ngcobo families</span></li>
+        <li><strong>CAPS</strong><span>National curriculum</span></li>
+        <li><strong>Christian</strong><span>Faith at the centre</span></li>
+      </ul>
+      </div>
+
+      <!-- Welcome -->
+      <section class="section">
+        <div class="wrap welcome">
+          <div class="welcome__photo">
+            <figure class="shield-frame">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="/_images/web/cultural-day-640.webp 640w, /_images/web/cultural-day-1200.webp 960w"
+                  sizes="(min-width: 64em) 24rem, 90vw"
+                />
+                <img
+                  src="/_images/web/cultural-day-640.jpg"
+                  srcset="/_images/web/cultural-day-640.jpg 640w, /_images/web/cultural-day-1200.jpg 960w"
+                  sizes="(min-width: 64em) 24rem, 90vw"
+                  width="960"
+                  height="1200"
+                  alt="A group of Victory learners in traditional dress on Cultural Day"
+                  loading="lazy"
+                />
+              </picture>
+            </figure>
+            <p class="photo-note">Cultural Day at Victory</p>
           </div>
-          <div class="welcome-text">
-            <span class="tag">Welcome to Victory</span>
-            <h2>A Place Where Every Child Can Thrive</h2>
+          <div>
+            <span class="ribbon">Welcome</span>
+            <h2>A small school where every child is known</h2>
             <p>
-              Situated in the vibrant small town of Ngcobo in the Eastern Cape,
-              Victory Primary School was founded in 2017 on the unshakeable
-              belief that quality education and Christian values can transform
-              lives and communities.
+              Victory Primary opened in Ngcobo in 2017 with a simple belief:
+              good teaching and Christian values can change a child's life,
+              and through them, a community.
             </p>
             <p>
-              From Grade R through to Grade 7, we walk alongside every learner
-              on their academic journey — building confidence, character, and a
-              lifelong love of learning.
+              From their first day in Grade R to their last in Grade 7, we
+              walk alongside every learner, building confidence, character
+              and a love of learning.
             </p>
-            <div class="welcome-features">
-              <div class="feature-item">
-                <div class="feature-icon">
-                  <i class="fa-solid fa-cross"></i>
-                </div>
-                Christ-centred education &amp; values
-              </div>
-              <div class="feature-item">
-                <div class="feature-icon">
-                  <i class="fa-solid fa-book-open"></i>
-                </div>
-                Grades R to 7 in one caring community
-              </div>
-              <div class="feature-item">
-                <div class="feature-icon">
-                  <i class="fa-solid fa-earth-africa"></i>
-                </div>
-                Rooted in the heart of Ngcobo
-              </div>
-              <div class="feature-item">
-                <div class="feature-icon"><i class="fa-solid fa-star"></i></div>
-                Dedicated and passionate educators
-              </div>
-            </div>
+            <ul class="checklist">
+              <li>Christ-centred teaching and values</li>
+              <li>Grade R to 7 in one caring community</li>
+              <li>Sport, culture and the arts alongside the classroom</li>
+              <li>Dedicated, caring teachers</li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ── CORE VALUES ────────────────────────── -->
-    <section class="bg-grey">
-      <div class="container">
-        <h2 class="section-title">Our Core Values</h2>
-        <div class="section-divider"></div>
-        <p class="section-subtitle">
-          Everything we do at Victory Primary is rooted in faith, guided by
-          love, and aimed at building the whole child.
-        </p>
-        <div class="values-grid">
-          <div class="value-card">
-            <div class="value-icon"><i class="fa-solid fa-cross"></i></div>
-            <h3>Faith</h3>
+      <!-- Values -->
+      <section class="section section--tint">
+        <div class="wrap values-layout">
+          <div>
+            <span class="ribbon">What we stand for</span>
+            <h2>Our four values</h2>
+            <hr class="rim rim--short" />
+            <p>Everything at Victory starts with faith and is shaped by love for the whole child.</p>
+          </div>
+          <ol class="values">
+            <li>
+              <h3>Faith</h3>
+              <p>God's Word is at the centre of our school, and we nurture each learner's spiritual growth.</p>
+            </li>
+            <li>
+              <h3>Excellence</h3>
+              <p>We ask every child for their personal best in the classroom, on the field and on stage.</p>
+            </li>
+            <li>
+              <h3>Community</h3>
+              <p>Staff, learners and parents work together as one family to keep school warm and safe.</p>
+            </li>
+            <li>
+              <h3>Compassion</h3>
+              <p>We teach children to care for each other and for Ngcobo through service and kindness.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Scripture -->
+      <section class="section scripture">
+        <div class="wrap">
+          <img class="scripture__crest" src="/_images/web/crest-192.webp" alt="" width="192" height="192" loading="lazy" />
+          <blockquote>
+            <p>“Train up a child in the way he should go; even when he is old he will not depart from it.”</p>
+            <cite>Proverbs 22:6</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- School life -->
+      <section class="section section--tint">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="ribbon">School life</span>
+            <h2>Recently at Victory</h2>
+            <p>A few moments from this year. There are many more in the gallery.</p>
+          </div>
+          <div class="stories">
+            <article class="story">
+              <a href="/gallery">
+                <picture>
+                  <source type="image/webp" srcset="/_images/web/sports-day-480.webp 480w, /_images/web/sports-day-800.webp 800w" sizes="(min-width: 64em) 22rem, (min-width: 40em) 45vw, 90vw" />
+                  <img src="/_images/web/sports-day-480.jpg" srcset="/_images/web/sports-day-480.jpg 480w, /_images/web/sports-day-800.jpg 800w" sizes="(min-width: 64em) 22rem, (min-width: 40em) 45vw, 90vw" width="800" height="600" alt="Victory's sports teams gathered on the field with their trophies" loading="lazy" />
+                </picture>
+                <span class="story__meta">Sport · 2026</span>
+                <h3>Trophies for our teams</h3>
+                <p>Our learners came home from the sports competition with silverware and a lot of pride.</p>
+              </a>
+            </article>
+            <article class="story">
+              <a href="/gallery">
+                <picture>
+                  <source type="image/webp" srcset="/_images/web/cultural-day-2-480.webp 480w, /_images/web/cultural-day-2-800.webp 800w" sizes="(min-width: 64em) 22rem, (min-width: 40em) 45vw, 90vw" />
+                  <img src="/_images/web/cultural-day-2-480.jpg" srcset="/_images/web/cultural-day-2-480.jpg 480w, /_images/web/cultural-day-2-800.jpg 800w" sizes="(min-width: 64em) 22rem, (min-width: 40em) 45vw, 90vw" width="800" height="600" alt="Learners and teachers in traditional clothing outside the school buildings" loading="lazy" />
+                </picture>
+                <span class="story__meta">Culture · 2026</span>
+                <h3>Cultural Day</h3>
+                <p>Learners and staff dressed in traditional clothing to celebrate the heritage we share.</p>
+              </a>
+            </article>
+            <article class="story">
+              <a href="/gallery">
+                <picture>
+                  <source type="image/webp" srcset="/_images/web/prize-giving-480.webp 480w, /_images/web/prize-giving-800.webp 800w" sizes="(min-width: 64em) 22rem, (min-width: 40em) 45vw, 90vw" />
+                  <img src="/_images/web/prize-giving-480.jpg" srcset="/_images/web/prize-giving-480.jpg 480w, /_images/web/prize-giving-800.jpg 800w" sizes="(min-width: 64em) 22rem, (min-width: 40em) 45vw, 90vw" width="800" height="600" alt="Two learners wearing red award sashes at the prize-giving ceremony" loading="lazy" />
+                </picture>
+                <span class="story__meta">Achievement · 2026</span>
+                <h3>Prize-giving</h3>
+                <p>We celebrated the learners whose hard work and good character stood out this year.</p>
+              </a>
+            </article>
+          </div>
+          <div class="section-foot">
+            <a href="/events" class="link-arrow">See the 2026 school calendar</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Admissions -->
+      <section class="apply-band">
+        <div class="wrap">
+          <div>
+            <span class="ribbon ribbon--gold">Admissions</span>
+            <h2>Applications for 2027 are open</h2>
             <p>
-              We centre our school community on God's Word, nurturing spiritual
-              growth in every learner.
+              Give your child a Christ-centred foundation for life. Download the
+              application form, or call the office and we'll talk you through it.
             </p>
           </div>
-          <div class="value-card">
-            <div class="value-icon">
-              <i class="fa-solid fa-graduation-cap"></i>
-            </div>
-            <h3>Excellence</h3>
-            <p>
-              We encourage each child to pursue their personal best in
-              academics, sport, and the arts.
-            </p>
-          </div>
-          <div class="value-card">
-            <div class="value-icon"><i class="fa-solid fa-handshake"></i></div>
-            <h3>Community</h3>
-            <p>
-              We are a family. Staff, learners, and parents work together to
-              create a warm, safe environment.
-            </p>
-          </div>
-          <div class="value-card">
-            <div class="value-icon"><i class="fa-solid fa-heart"></i></div>
-            <h3>Compassion</h3>
-            <p>
-              We teach children to care for one another and their community
-              through acts of service and kindness.
-            </p>
+          <div class="btn-row">
+            <a href="/admissions" class="btn btn--gold">How to apply</a>
+            <a href="/contact" class="btn btn--line-light">Contact us</a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- ── SCRIPTURE BANNER ───────────────────── -->
-    <div class="scripture-banner">
-      <div class="container">
-        <blockquote>
-          "Train up a child in the way he should go; even when he is old he will
-          not depart from it."
-        </blockquote>
-        <cite>— Proverbs 22:6</cite>
-      </div>
-    </div>
-
-    <!-- ── NEWS & EVENTS PREVIEW ─────────────── -->
-    <section>
-      <div class="container">
-        <h2 class="section-title">Latest News &amp; Events</h2>
-        <div class="section-divider"></div>
-        <p class="section-subtitle">
-          Stay up to date with what's happening at Victory Primary School.
-        </p>
-        <div class="news-grid">
-          <div class="news-card">
-            <div class="news-img">🏆</div>
-            <div class="news-body">
-              <div class="news-date">May 2025</div>
-              <h3>Sports Day 2025 — A Fantastic Day!</h3>
-              <p>
-                Our annual Sports Day was a wonderful celebration of teamwork,
-                talent, and school spirit. Congratulations to all our athletes!
-              </p>
-            </div>
-          </div>
-          <div class="news-card">
-            <div class="news-img">📖</div>
-            <div class="news-body">
-              <div class="news-date">April 2025</div>
-              <h3>Term 2 Begins with Renewed Energy</h3>
-              <p>
-                Welcome back, Victory family! Term 2 is underway and our
-                learners are diving into exciting new topics across all grades.
-              </p>
-            </div>
-          </div>
-          <div class="news-card">
-            <div class="news-img">🎨</div>
-            <div class="news-body">
-              <div class="news-date">March 2025</div>
-              <h3>Creative Arts Exhibition Opens</h3>
-              <p>
-                Our classrooms were transformed into a gallery showcasing the
-                incredible artistic talents of our learners from Grade R to
-                Grade 7.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div style="text-align: center; margin-top: 2.5rem">
-          <a href="/events" class="btn btn-outline-red">View All Events</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── CTA BANNER ─────────────────────────── -->
-    <section
-      style="
-        background: linear-gradient(135deg, var(--red-dark), var(--dark));
-        padding: 70px 0;
-      "
-    >
-      <div class="container" style="text-align: center">
-        <h2 style="color: var(--white); margin-bottom: 0.6rem">
-          Ready to Join the Victory Family?
-        </h2>
-        <p
-          style="
-            color: rgba(255, 255, 255, 0.7);
-            max-width: 520px;
-            margin: 0 auto 2rem;
-            font-size: 1.05rem;
-          "
-        >
-          Applications are open for the 2026 academic year. Give your child a
-          Christ-centred foundation for life.
-        </p>
-        <div
-          style="
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-          "
-        >
-          <a href="/admissions" class="btn btn-gold">Apply Now</a>
-          <a href="/contact" class="btn btn-secondary">Contact Us</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── FOOTER ─────────────────────────────── -->
-    <footer>
-      <div class="container">
+    <footer class="site-footer">
+      <div class="wrap">
         <div class="footer-grid">
           <div class="footer-brand">
-            <img
-              src="_images/logo (2).png"
-              alt="Victory Primary School"
-              class="footer-logo"
-            />
-            <h3>Victory Primary School</h3>
-            <span class="motto">"In God We Trust"</span>
-            <p>
-              A Christian primary school in Ngcobo, Eastern Cape, nurturing
+            <img src="/_images/web/crest-192.webp" alt="" width="192" height="192" loading="lazy" />
+            <strong>Victory Primary School</strong>
+            <em>In God We Trust</em>
+            <p style="margin-top: 0.75rem">
+              A Christian primary school in Ngcobo, Eastern Cape, teaching
               learners from Grade R to Grade 7 since 2017.
             </p>
           </div>
-          <div class="footer-col">
-            <h4>Quick Links</h4>
+          <div>
+            <h2>School</h2>
             <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/about">About Us</a></li>
+              <li><a href="/about">About us</a></li>
               <li><a href="/academics">Academics</a></li>
+              <li><a href="/events">Events</a></li>
               <li><a href="/gallery">Gallery</a></li>
             </ul>
           </div>
-          <div class="footer-col">
-            <h4>School</h4>
+          <div>
+            <h2>Parents</h2>
             <ul>
-              <li><a href="/events">Events</a></li>
               <li><a href="/admissions">Admissions</a></li>
+              <li><a href="/admissions#fees">School fees</a></li>
               <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
-          <div class="footer-col">
-            <h4>Contact</h4>
-            <ul>
-              <li><a href="#">Ngcobo, Eastern Cape</a></li>
+          <div>
+            <h2>Get in touch</h2>
+            <ul class="footer-contact">
               <li>
-                <a href="mailto:victoryprimaryec@gmail.com"
-                  >victoryprimaryec@gmail.com</a
-                >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+                <a href="tel:+27699361866">069 936 1866</a>
               </li>
-              <li><a href="tel:+27699361866">069 936 1866</a></li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+                <a href="mailto:victoryprimaryec@gmail.com">victoryprimaryec@gmail.com</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                <span>Ngcobo, Eastern Cape</span>
+              </li>
             </ul>
           </div>
         </div>
         <div class="footer-bottom">
-          <span
-            >© 2026 Victory Primary School, Ngcobo. All rights reserved.</span
-          >
-          <span class="love">Established 2017 · In God We Trust ✝</span>
+          <p>© 2026 Victory Primary School, Ngcobo.</p>
         </div>
       </div>
     </footer>
 
-    <script>
-      function toggleNav() {
-        document.getElementById("navLinks").classList.toggle("open");
-      }
-    </script>
+    <script src="/js/site.js" defer></script>
   </body>
 </html>
