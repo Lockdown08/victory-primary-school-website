@@ -32,6 +32,11 @@ Done:
   is `.is-now`; the year in "We are here" comes from today's date), Events marks
   the current term, past events and the next event from `data-date`, Gallery
   filters and full-size viewer, Contact form posts to Formspree in the page.
+- Dates that move on by themselves (`js/site.js`): `data-year` (this year,
+  e.g. the footer ©), `data-year="next"` (applications are always for next
+  year), `data-month-year` (the timeline's "We are here · October 2026"). The
+  HTML keeps the 2026 text as a fallback. Events shows a "new calendar is on its
+  way" note (`data-year-over`) once every listed event is past.
 - Gallery photos are `_images/web/gallery/{sport,prizes,cultural}-NN-{480,1280}`.
 - Events: when the 2027 calendar comes, update the dates in `events/index.html`
   (`data-date` on each event, `data-start`/`data-end` on each term).

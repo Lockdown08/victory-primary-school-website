@@ -538,10 +538,10 @@ body.nav-open { overflow: hidden; }
   display: inline-flex; align-items: center; gap: 0.5rem;
   margin-bottom: 0.6rem; padding: 0.3rem 0.75rem 0.3rem 0.6rem;
   background: var(--maroon); color: var(--gold-light); border-radius: 999px;
-  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
 }
 .timeline__here::before {
-  content: ""; width: 0.5rem; height: 0.5rem; border-radius: 50%;
+  content: ""; flex: none; width: 0.5rem; height: 0.5rem; border-radius: 50%;
   background: #ffd76a; box-shadow: 0 0 6px 1px #ffd76a;
   animation: blink 1.2s ease-in-out infinite;
 }

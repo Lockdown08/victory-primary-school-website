@@ -28,16 +28,31 @@
   });
 })();
 
-// Timeline (About): the gold line runs from the first dot to "now",
-// and the "We are here" tag shows the current year.
+// Dates that move on by themselves. The HTML holds the 2026 text, so a page
+// still reads sensibly if this script doesn't run.
+//   data-year         this year (e.g. the footer's ©)
+//   data-year="next"  next year (applications are always for next year)
+//   data-month-year   this month and year, e.g. "October 2026"
+(function () {
+  var today = new Date();
+  var year = today.getFullYear();
+  var months = ["January", "February", "March", "April", "May", "June", "July",
+    "August", "September", "October", "November", "December"];
+  document.querySelectorAll("[data-year]").forEach(function (el) {
+    el.textContent = el.dataset.year === "next" ? year + 1 : year;
+  });
+  document.querySelectorAll("[data-month-year]").forEach(function (el) {
+    el.textContent = months[today.getMonth()] + " " + year;
+  });
+})();
+
+// Timeline (About): the gold line runs from the first dot to "now".
 (function () {
   var timeline = document.querySelector(".timeline");
   if (!timeline) return;
   var track = timeline.querySelector(".timeline__track");
   var dots = timeline.querySelectorAll(".timeline__dot");
   var now = timeline.querySelector(".is-now .timeline__dot");
-  var year = timeline.querySelector("[data-current-year]");
-  if (year) year.textContent = new Date().getFullYear();
   if (!track || !dots.length || !now) return;
 
   function centre(el) {
@@ -71,6 +86,9 @@
     else if (!next) next = ev;
   });
   if (next) next.classList.add("is-next");
+  // Every event is over: say the new calendar is coming
+  var over = document.querySelector("[data-year-over]");
+  if (over && !next) over.hidden = false;
 
   document.querySelectorAll(".terms [data-start]").forEach(function (term) {
     if (day(term.dataset.start) <= today && today <= day(term.dataset.end)) {
