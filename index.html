@@ -67,18 +67,30 @@
       <!-- Hero -->
       <section class="hero">
         <picture class="hero__media">
+          <!-- Phones get a tighter crop on the classrooms and flagpole -->
+          <source
+            media="(max-width: 39.99em)"
+            type="image/webp"
+            srcset="/_images/web/hero-school-phone-640.webp 640w, /_images/web/hero-school-phone-1150.webp 1150w"
+            sizes="160vh"
+          />
+          <source
+            media="(max-width: 39.99em)"
+            srcset="/_images/web/hero-school-phone-640.jpg 640w, /_images/web/hero-school-phone-1150.jpg 1150w"
+            sizes="160vh"
+          />
           <source
             type="image/webp"
-            srcset="/_images/web/assembly-800.webp 800w, /_images/web/assembly-1280.webp 1280w"
+            srcset="/_images/web/hero-school-800.webp 800w, /_images/web/hero-school-1280.webp 1280w, /_images/web/hero-school-1920.webp 1920w"
             sizes="100vw"
           />
           <img
-            src="/_images/web/assembly-800.jpg"
-            srcset="/_images/web/assembly-800.jpg 800w, /_images/web/assembly-1280.jpg 1280w"
+            src="/_images/web/hero-school-1280.jpg"
+            srcset="/_images/web/hero-school-800.jpg 800w, /_images/web/hero-school-1280.jpg 1280w, /_images/web/hero-school-1920.jpg 1920w"
             sizes="100vw"
-            width="1280"
-            height="720"
-            alt="Victory learners gathered outside the school buildings, with the Ngcobo hills behind them"
+            width="1920"
+            height="860"
+            alt="Victory Primary School: white and grey classroom blocks, the flagpole, lawns with picnic tables and flower beds, and green hills behind"
             fetchpriority="high"
           />
         </picture>
@@ -91,7 +103,7 @@
             character as we do about marks.
           </p>
           <div class="btn-row">
-            <a href="/admissions" class="btn btn--gold">Apply for <span data-year="next">2027</span></a>
+            <a href="/admissions" class="btn btn--gold"><span>Apply for <span data-year="next">2027</span></span></a>
             <a href="tel:+27699361866" class="btn btn--line-light">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
               Call the office

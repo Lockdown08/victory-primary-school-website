@@ -78,6 +78,9 @@ Still to do:
   `<picture>` + `srcset`, explicit `width`/`height`, `loading="lazy"` below the
   fold. The crest is `_images/web/crest-{96,192,320}.webp/png`.
 - Teacher photos: use `_images/teachersupdate1.1/` (the newer set).
+- Homepage hero: `_images/school/school-grounds.jpg` (the school buildings and
+  grounds), as `hero-school-{800,1280,1920}` plus a tighter phone crop
+  `hero-school-phone-{640,1150}`.
 
 ## Contact details used on the site
 
