@@ -51,6 +51,15 @@ Still to do:
 - Mobile-first: base CSS is for phones, `min-width: 40em` and `64em` add
   larger layouts. Tap targets at least 44px.
 - Copy: plain, specific, warm. No "where every child can thrive" filler.
+- Layout reference: chelseaprep.co.za (October 2026). We borrow its structure,
+  not its colours or content: dark top bar (phone, email), white sticky header
+  with a large crest and spaced-capital nav, full-width photo hero, `.label`
+  section labels with a gold rim above, `.band` full-width photo sections with
+  an overlaid text panel (`--focus` sets the photo's focal point, `band--light`,
+  `band--right`, `band--low` move/restyle the panel), three `.quick` links, and
+  a footer over a darkened photo. Don't add Chelsea's sections we don't have
+  (sport, cultural, support, news pages). `index.html` has the header/footer
+  markup to copy onto the other pages.
 
 ## Images
 
