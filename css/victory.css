@@ -306,6 +306,22 @@ body.nav-open { overflow: hidden; }
 .hero h1 em { font-style: italic; font-weight: 400; color: var(--gold-light); text-transform: none; letter-spacing: 0.01em; }
 .hero__lead { font-size: 1.12rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 1.6rem; max-width: 34rem; }
 
+/* ---- Scroll reveals (homepage), after Chelsea Prep -------------------------
+   Parts of the page slide, zoom or fade in once as they scroll into view.
+   The "reveal-on" class is only added when the script can run and the visitor
+   hasn't asked for reduced motion, so nothing is ever left hidden. */
+main { overflow-x: clip; } /* sections sliding in from the side mustn't cause sideways scroll */
+.reveal-on [data-reveal] {
+  opacity: 0;
+  transition: opacity var(--dur, 1s) ease-in-out, transform var(--dur, 1s) ease-in-out;
+  transition-delay: var(--delay, 0s);
+}
+.reveal-on [data-reveal="left"] { transform: translateX(-14%); }
+.reveal-on [data-reveal="right"] { transform: translateX(14%); }
+.reveal-on [data-reveal="up"] { transform: translateY(2.5rem); }
+.reveal-on [data-reveal="zoom"] { transform: scale(0.85); }
+.reveal-on [data-reveal].is-revealed { opacity: 1; transform: none; }
+
 /* ---- Principal's welcome --------------------------------------------------- */
 .section--white { background: var(--white); }
 .welcome { display: grid; gap: 1.5rem; }

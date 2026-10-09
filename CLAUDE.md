@@ -32,6 +32,11 @@ Done:
   is `.is-now`; the year in "We are here" comes from today's date), Events marks
   the current term, past events and the next event from `data-date`, Gallery
   filters and full-size viewer, Contact form posts to Formspree in the page.
+- Homepage scroll reveals, after Chelsea's: add `data-reveal="fade|zoom|up|left|right"`
+  (optional `--delay`, `--dur`) and the part animates in once when scrolled to.
+  A small script in the homepage `<head>` turns this on only when it can run
+  and the visitor hasn't asked for reduced motion; if `site.js` fails to load,
+  everything shows after 3 seconds.
 - Dates that move on by themselves (`js/site.js`): `data-year` (this year,
   e.g. the footer ©), `data-year="next"` (applications are always for next
   year), `data-month-year` (the timeline's "We are here · October 2026"). The

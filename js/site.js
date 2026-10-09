@@ -28,6 +28,22 @@
   });
 })();
 
+// Scroll reveals: show each [data-reveal] part as it comes into view.
+// The page's <head> adds "reveal-on" only when this can run.
+(function () {
+  if (!document.documentElement.classList.contains("reveal-on")) return;
+  window.revealReady = true;
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-revealed");
+        io.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: "0px 0px -8% 0px", threshold: 0.12 });
+  document.querySelectorAll("[data-reveal]").forEach(function (el) { io.observe(el); });
+})();
+
 // Dates that move on by themselves. The HTML holds the 2026 text, so a page
 // still reads sensibly if this script doesn't run.
 //   data-year         this year (e.g. the footer's ©)

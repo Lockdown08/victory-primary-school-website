@@ -12,6 +12,12 @@
     <link rel="preload" href="/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/public-sans-400.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="/css/victory.css" />
+    <script>
+      if ("IntersectionObserver" in window && matchMedia("(prefers-reduced-motion: no-preference)").matches) {
+        document.documentElement.classList.add("reveal-on");
+        setTimeout(function () { if (!window.revealReady) document.documentElement.classList.remove("reveal-on"); }, 3000);
+      }
+    </script>
     <link rel="icon" href="/favicon.ico" sizes="48x48" />
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -66,7 +72,7 @@
     <main id="main">
       <!-- Hero -->
       <section class="hero">
-        <picture class="hero__media">
+        <picture class="hero__media" data-reveal="fade" style="--dur: 1.5s">
           <!-- Phones get a tighter crop on the classrooms and flagpole -->
           <source
             media="(max-width: 39.99em)"
@@ -95,14 +101,14 @@
           />
         </picture>
         <div class="wrap hero__text">
-          <span class="ribbon">Ngcobo · Eastern Cape · Est. 2017</span>
-          <h1><span>Victory</span> <span>Primary</span> <span><em>School</em></span></h1>
-          <p class="hero__lead">
+          <span class="ribbon" data-reveal="fade" style="--delay: 0.2s">Ngcobo · Eastern Cape · Est. 2017</span>
+          <h1 data-reveal="zoom" style="--dur: 1.3s"><span>Victory</span> <span>Primary</span> <span><em>School</em></span></h1>
+          <p class="hero__lead" data-reveal="right" style="--delay: 0.5s">
             A Christian primary school for Grade R to Grade 7. We teach the
             CAPS curriculum, and we care just as much about faith and
             character as we do about marks.
           </p>
-          <div class="btn-row">
+          <div class="btn-row" data-reveal="right" style="--delay: 0.65s">
             <a href="/admissions" class="btn btn--gold"><span>Apply for <span data-year="next">2027</span></span></a>
             <a href="tel:+27699361866" class="btn btn--line-light">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
@@ -115,7 +121,7 @@
       <!-- Principal's welcome -->
       <section class="section section--white">
         <div class="wrap welcome">
-          <div>
+          <div data-reveal="up">
             <p class="label">Principal's welcome</p>
             <figure class="welcome__portrait">
               <picture>
@@ -132,7 +138,7 @@
               </picture>
             </figure>
           </div>
-          <div class="welcome__body">
+          <div class="welcome__body" data-reveal="up" style="--delay: 0.15s">
             <h2>A message from our principal</h2>
             <blockquote class="welcome__quote">
               <p>“At Victory Primary, every child is known by name and loved by God, and we never forget that.”</p>
@@ -153,7 +159,7 @@
       </section>
 
       <!-- In the classroom -->
-      <section class="band band--right">
+      <section class="band band--right" data-reveal="left">
         <picture class="band__media">
           <source type="image/webp" srcset="/_images/web/certificates-800.webp 800w, /_images/web/certificates-1280.webp 1280w" sizes="100vw" />
           <img
@@ -167,7 +173,7 @@
           />
         </picture>
         <div class="wrap band__inner">
-          <div class="band__panel">
+          <div class="band__panel" data-reveal="zoom" style="--delay: 0.3s">
             <span class="band__meta">Grade R to Grade 7</span>
             <h2>In the classroom</h2>
             <p>
@@ -182,7 +188,7 @@
       </section>
 
       <!-- On the sports field -->
-      <section class="band band--light" style="--focus: 50% 8%">
+      <section class="band band--light" data-reveal="right" style="--focus: 50% 8%">
         <picture class="band__media">
           <source type="image/webp" srcset="/_images/web/hero-trophies-800.webp 800w, /_images/web/hero-trophies-1280.webp 1280w" sizes="100vw" />
           <img
@@ -196,7 +202,7 @@
           />
         </picture>
         <div class="wrap band__inner">
-          <div class="band__panel">
+          <div class="band__panel" data-reveal="zoom" style="--delay: 0.3s">
             <span class="band__meta">Sport · 2026</span>
             <h2>On the sports field</h2>
             <p>
@@ -209,7 +215,7 @@
       </section>
 
       <!-- Culture -->
-      <section class="band band--low" style="--focus: 50% 30%">
+      <section class="band band--low" data-reveal="left" style="--focus: 50% 30%">
         <picture class="band__media">
           <source type="image/webp" srcset="/_images/web/cultural-day-group-800.webp 800w, /_images/web/cultural-day-group-1280.webp 1280w" sizes="100vw" />
           <img
@@ -223,7 +229,7 @@
           />
         </picture>
         <div class="wrap band__inner">
-          <div class="band__panel">
+          <div class="band__panel" data-reveal="zoom" style="--delay: 0.3s">
             <span class="band__meta">Cultural Day · 2026</span>
             <h2>Our heritage</h2>
             <p>
@@ -238,12 +244,12 @@
       <!-- Values -->
       <section class="section section--tint">
         <div class="wrap values-layout">
-          <div>
+          <div data-reveal="up">
             <p class="label">What we stand for</p>
             <h2>Our four values</h2>
             <p>Everything at Victory starts with faith and is shaped by love for the whole child.</p>
           </div>
-          <ol class="values">
+          <ol class="values" data-reveal="up" style="--delay: 0.15s">
             <li>
               <h3>Faith</h3>
               <p>God's Word is at the centre of our school, and we nurture each learner's spiritual growth.</p>
@@ -266,7 +272,7 @@
 
       <!-- Scripture -->
       <section class="section scripture">
-        <div class="wrap">
+        <div class="wrap" data-reveal="zoom">
           <img class="scripture__crest" src="/_images/web/crest-192.webp" alt="" width="192" height="192" loading="lazy" />
           <blockquote>
             <p>“Train up a child in the way he should go; even when he is old he will not depart from it.”</p>
@@ -278,7 +284,7 @@
       <!-- Three ways in -->
       <section class="section section--white">
         <div class="wrap">
-          <ul class="quick">
+          <ul class="quick" data-reveal="fade">
             <li>
               <a href="/admissions">
                 <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M24 12c-4-3-10-4-17-3v27c7-1 13 0 17 3 4-3 10-4 17-3V9c-7-1-13 0-17 3z"/><path d="M24 12v27"/></svg>
